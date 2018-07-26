@@ -1,0 +1,10 @@
+<div class="container">
+  <mat-form-field class="block">
+    <mat-select placeholder="Damage" 
+      (selectionChange)="onSelection($event.value)">
+      <mat-option *ngFor="let item of list|async" [value]="item">
+        {{item.Text}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

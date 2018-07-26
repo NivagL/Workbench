@@ -1,0 +1,15 @@
+<br/>
+<div class="container">
+  <div class="tile" 
+  *ngFor="let tile of tiles"
+  [ngStyle]="{'background-color': tile.Colour}" 
+  (click)="onTileClick(tile)"
+  >{{tile.Title}}</div>
+</div>
+<br/>
+<br/>
+<br/>
+<app-task-by-client></app-task-by-client>
+<br/>
+<br/>
+<app-employee-by-work-type></app-employee-by-work-type>

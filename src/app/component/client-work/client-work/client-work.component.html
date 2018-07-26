@@ -1,0 +1,29 @@
+<br/>
+<div class="toolbar">
+  <div clas="left">
+    <app-client></app-client>
+    <app-work-type></app-work-type>
+  </div>
+  <div class='space-filler'></div>
+  <div class="right">
+    <button mat-fab color="primary">Primary</button>
+    <button mat-fab color="accent">Accent</button>
+    <button mat-fab color="warn">Warn</button>
+    <button mat-fab color="" (click)="onQAClick()">QA</button>
+  </div>
+</div>
+<br/>
+<div class="container">
+  <div class="chart">
+    <app-task-by-date></app-task-by-date>
+  </div>
+  <div class="chart">
+    <app-task-today></app-task-today>
+  </div>
+  <div class="chart">
+    <app-issue-by-date></app-issue-by-date>
+  </div>
+  <div class="chart">
+    <app-issue-today></app-issue-today>
+  </div>
+</div>

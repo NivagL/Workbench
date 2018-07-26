@@ -1,0 +1,1082 @@
+[
+  {
+    "Id": 1,
+    "Code": "CD2900",
+    "Text": "Load readings overhead",
+    "Description": "Install single/3 phase data logger as per Guideline ENG-008.  Record data and provide report.",
+    "Group": "Load Readings",
+    "WorkType": 2
+  },
+  {
+    "Id": 2,
+    "Code": "CD2901",
+    "Text": "Load readings ground mounted",
+    "Description": "Install single/3 phase data logger as per Guideline ENG-008.  Record data and provide report.",
+    "Group": "Load Readings",
+    "WorkType": 2
+  },
+  {
+    "Id": 3,
+    "Code": "CD2900",
+    "Text": "Load readings overhead",
+    "Description": "Install single/3 phase data logger as per Guideline ENG-008.  Record data and provide report.",
+    "Group": "Load Readings",
+    "WorkType": 2
+  },
+  {
+    "Id": 4,
+    "Code": "CD2901",
+    "Text": "Load readings ground mounted",
+    "Description": "Install single/3 phase data logger as per Guideline ENG-008.  Record data and provide report.",
+    "Group": "Load Readings",
+    "WorkType": 2
+  },
+  {
+    "Id": 5,
+    "Code": "AO1209",
+    "Text": "Install 1.8 x 75 x 100 LV pin crossarm",
+    "Description": "Installation of cross arm on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, shackles and deadends. Where a double crossarm is used these unit rates will be multiplied by two, therefore spacer pipes and extra bolts should be factored in. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1090 and END 1091",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 6,
+    "Code": "AO1210",
+    "Text": "Install 1.8 x75 x 100 LV shackle arm one way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, max of 6 shackles and deadends, spacer pipes  and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. 2.1m crossarms may be used. See END-1095",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 7,
+    "Code": "AO1211",
+    "Text": "Install 1.8 x75 x 100 LV shackle arm two way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, max of 12 shackles and deadends, spacer pipes  and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. 2.1m crossarms may be used. END-1096",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 8,
+    "Code": "AO1212",
+    "Text": "Install 1.5 x 75 x 100 LV service crossarm",
+    "Description": "Installation of service cross arm on existing pole,  include arm braces, bolts. Where a double crossarm is used these unit rates will be multiplied by two, therefore spacer pipes and extra bolts should be factored in. This rate does not include any services fuses or shackles insulators or associated fittings See END-1078 and END-1102",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 9,
+    "Code": "AO1213",
+    "Text": "Install 3.6 x 100 x 100 LV pin crossarm",
+    "Description": "Installation of cross arm on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 10,
+    "Code": "AO1214",
+    "Text": "Install 3.6 x 100 x 100 LV shackle crossarm two or one way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, shackles and deadends, spacer pipes and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1010 and END-1153",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 11,
+    "Code": "AO1401",
+    "Text": "Install 1 60/100 amp service connection",
+    "Description": "Includes 2 IPC connectors, cu leads,  1 x 60/100 amp Michaud cut-out with IPC connectors, fuse link, all shackle insulators, For 3 phase services, this unit rate will be multiplied by three. This unit also includes re-sagging of any size or number of conductors per service. This unit rates shall also be used where an LV underground service is relocated to the new pole without lengthening of the  service main",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 12,
+    "Code": "AO1402",
+    "Text": "Install 3 phase >100 amp service connection",
+    "Description": "Includes all ampact connectors, cu leads,  3 phases fuse unit or 3 x single phase units > 100 amp cut-out, all shackle insulators, this unit rate will include all fuses up to 400amps. This unit rates shall also be used where an LV underground service is relocated to the new pole without lengthening of the  service main.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 13,
+    "Code": "AO1209",
+    "Text": "Install 1.8 x 75 x 100 LV pin crossarm",
+    "Description": "Installation of cross arm on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, shackles and deadends. Where a double crossarm is used these unit rates will be multiplied by two, therefore spacer pipes and extra bolts should be factored in. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1090 and END 1091",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 14,
+    "Code": "AO1210",
+    "Text": "Install 1.8 x75 x 100 LV shackle arm one way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, max of 6 shackles and deadends, spacer pipes  and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. 2.1m crossarms may be used. See END-1095",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 15,
+    "Code": "AO1211",
+    "Text": "Install 1.8 x75 x 100 LV shackle arm two way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, max of 12 shackles and deadends, spacer pipes  and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. 2.1m crossarms may be used. END-1096",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 16,
+    "Code": "AO1213",
+    "Text": "Install 3.6 x 100 x 100 LV pin crossarm",
+    "Description": "Installation of cross arm on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 17,
+    "Code": "AO1214",
+    "Text": "Install 3.6 x 100 x 100 LV shackle crossarm two or one way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, shackles and deadends, spacer pipes and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1010 and END-1153",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 18,
+    "Code": "AO1212",
+    "Text": "Install 1.5 x 75 x 100 LV service crossarm",
+    "Description": "Installation of service cross arm on existing pole,  include arm braces, bolts. Where a double crossarm is used these unit rates will be multiplied by two, therefore spacer pipes and extra bolts should be factored in. This rate does not include any services fuses or shackles insulators or associated fittings See END-1078 and END-1102",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 19,
+    "Code": "AO1213",
+    "Text": "Install 3.6 x 100 x 100 LV pin crossarm",
+    "Description": "Installation of cross arm on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 20,
+    "Code": "AO1214",
+    "Text": "Install 3.6 x 100 x 100 LV shackle crossarm two or one way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, pin insulators and binders, shackles and deadends, spacer pipes and Ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1010 and END-1153",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 21,
+    "Code": "AO1206",
+    "Text": "Install 1.8 x 75 x 100 HV post crossarm",
+    "Description": "Installation of cross arm on existing pole,  include arm braces, bolts, any main line connectors, post insulators and binders, Where a double crossarm is used these unit rates will be multiplied by two, therefore spacer pipes and extra bolts should be factored in. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1071 and END 1072",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 22,
+    "Code": "AO1207",
+    "Text": "Install 1.8 x 75 x 100 HV shackle crossarm one way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, 3 x polymer strain insulators, eye bolts, post insulators and binders, spacer pipes and any ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1079",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 23,
+    "Code": "AO1208",
+    "Text": "Install 1.8 x 75 x 100 HV shackle crossarm two way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, 6 x polymer strain insulators, eye bolts, post insulators and binders, spacer pipes and any ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1080",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 24,
+    "Code": "AO1219",
+    "Text": "Install 2.4 x 75 x 100 HV post crossarm",
+    "Description": "Installation of cross arm on existing pole, include arm braces, bolts, any main line connectors, post insulators and binders. Where a double crossarm is used these unit rates will be multiplied by two, therefore spacer pipes and extra bolts should be factored in. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1071 and END-1072.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 25,
+    "Code": "AO1220",
+    "Text": "Install 2.4 x 75 x 100 HV shackle crossarm one way for new pole",
+    "Description": "Installation of 2 crossarms on existing pole, include arm braces, bolts, any main line connectors, 3 x polymer strain insulators, eyebolts, post insulators and binders, spacer pipes and any ampact connectors. This unit also includes resagging and binding in of all conductors associated with this arm of any size conductors. See END-1079",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 26,
+    "Code": "AO1221",
+    "Text": "Install 2.4 x 75 x 100 HV shackle cross arm two way for new pole",
+    "Description": "Installation of two crossarms on existing pole, include arm braces, bolts, ant main line connectors, 6 x polymer strain insulators, eye bolts, post insulators and binders, spacer pipes and any ampact connectors. This unit also includes resagging and binding in of all conductors associated with this arm of any size conductors. See END-1080",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 27,
+    "Code": "AO1200",
+    "Text": "Install 1.8 x 100 x 100 33kV two post insulator crossarm",
+    "Description": "Installation of cross arm on existing pole,  include arm braces, bolts, any main line connectors, 2 x post insulators and binders, Where a double crossarm is used these unit rates will be multiplied by two, therefore spacer pipes and extra bolts should be factored in. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1045 and END 1046",
+    "Group": "Crossarm without pole replacement",
+    "WorkType": 3
+  },
+  {
+    "Id": 28,
+    "Code": "AO1201",
+    "Text": "Install 1.8 x 100 x 100 33kV two shackle insulator crossarm one way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, 2 x polymer strain insulators, eye bolts, post insulators and binders, spacer pipes and any ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1047.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 29,
+    "Code": "AO1202",
+    "Text": "Install 1.8 x 100 x 100 33kV two shackle insulator crossarm two way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, 4 x polymer strain insulators, eye bolts, post insulators and binders, spacer pipes and any ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1047",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 30,
+    "Code": "AO1203",
+    "Text": "Install 2.4 x 100 x 100 33kV three post insulator crossarm",
+    "Description": "Installation of cross arm on existing pole,  include arm braces, bolts, any main line connectors, 3 x post insulators and binders, Where a double crossarm is used these unit rates will be multiplied by two, therefore spacer pipes and extra bolts should be factored in. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1040 and END 1041",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 31,
+    "Code": "AO1204",
+    "Text": "Install 2.4 x 100 x 100 33kV three shackle insulator crossarm one way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, 3 x polymer strain insulators, eye bolts, post insulators and binders, spacer pipes and any ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1043",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 32,
+    "Code": "AO1205",
+    "Text": "Install 2.4 x 100 x 100 33kV three shackle insulator crossarm two way",
+    "Description": "Installation of 2 cross arms on existing pole,  include arm braces, bolts, any main line connectors, 6 x polymer strain insulators, eye bolts, post insulators and binders, spacer pipes and any ampact connectors. This unit also includes re-sagging and binding in of all conductors associated with this arm of any size conductors. See END-1042",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 33,
+    "Code": "AO1004",
+    "Text": "Install pole 9.5M Busck",
+    "Description": "Price for 1 pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 34,
+    "Code": "AO1008",
+    "Text": "Install pole double 9.5M Busck",
+    "Description": "Price for 1 x doublepole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 35,
+    "Code": "AO1003",
+    "Text": "Install pole 10M Busck",
+    "Description": "Price for 1 pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 36,
+    "Code": "AO1002",
+    "Text": "Install pole 11M Busck",
+    "Description": "Price for 1 pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 37,
+    "Code": "AO1007",
+    "Text": "Install pole double 11M Busck",
+    "Description": "Price for 1 x double pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 38,
+    "Code": "AO1001",
+    "Text": "Install pole 12.5M Busck",
+    "Description": "Price for 1 pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 39,
+    "Code": "AO1006",
+    "Text": "Install pole double 12.5M Busck",
+    "Description": "Price for 1 x double pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 40,
+    "Code": "AO1001",
+    "Text": "Install pole 12.5M Busck",
+    "Description": "Price for 1 pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 41,
+    "Code": "AO1006",
+    "Text": "Install pole double 12.5M Busck",
+    "Description": "Price for 1 x double pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 42,
+    "Code": "AO1000",
+    "Text": "Install pole 14M Busck or 14.4M Humes",
+    "Description": "Price for 1 pole installed with no hardware, Including pole hole in soil (the top ground surface can be any material e.g. concrete, grass , tar seal, etc), and foundations including concrete base, block and backfill. All poles shall include a reflector installed as per VECTOR Standard ENS-0112. This rate also includes the removal of existing pole and all hardware, reinstating in soil/grass. This rate does not include crossarms, line design or excavation of rock.",
+    "Group": "New Pole (includes removal and disposal of existing pole and hardware together with basic line design using approved software)",
+    "WorkType": 3
+  },
+  {
+    "Id": 43,
+    "Code": "AO1400",
+    "Text": "Install 1 pilot service fuse",
+    "Description": "Includes 1 Michaud IPC fuse connector, cu lead, fuse link, all shackle insulators, any connectors and dead ends,  This unit also includes re-sagging of pilot service conductors. This unit rates shall also be used where an LV underground service is relocated to the pole without lengthening of the  service main",
+    "Group": "Service Fuse",
+    "WorkType": 3
+  },
+  {
+    "Id": 44,
+    "Code": "AO1402",
+    "Text": "Install 3 phase >100 amp service connection",
+    "Description": "Includes all ampact connectors, cu leads,  3 phases fuse unit or 3 x single phase units > 100 amp cut-out, all shackle insulators, this unit rate will include all fuses up to 400amps. This unit rates shall also be used where an LV underground service is relocated to the new pole without lengthening of the  service main.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 45,
+    "Code": "AO1401",
+    "Text": "Install 1 60/100 amp service connection",
+    "Description": "Includes 2 IPC connectors, cu leads,  1 x 60/100 amp Michaud cut-out with IPC connectors, fuse link, all shackle insulators, For 3 phase services, this unit rate will be multiplied by three. This unit also includes re-sagging of any size or number of conductors per service. This unit rates shall also be used where an LV underground service is relocated to the new pole without lengthening of the  service main",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 46,
+    "Code": "AO1402",
+    "Text": "Install 3 phase >100 amp service connection",
+    "Description": "Includes all ampact connectors, cu leads,  3 phases fuse unit or 3 x single phase units > 100 amp cut-out, all shackle insulators, this unit rate will include all fuses up to 400amps. This unit rates shall also be used where an LV underground service is relocated to the new pole without lengthening of the  service main.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 47,
+    "Code": "AO1402",
+    "Text": "Install 3 phase >100 amp service connection",
+    "Description": "Includes all ampact connectors, cu leads,  3 phases fuse unit or 3 x single phase units > 100 amp cut-out, all shackle insulators, this unit rate will include all fuses up to 400amps. This unit rates shall also be used where an LV underground service is relocated to the new pole without lengthening of the  service main.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 48,
+    "Code": "CU1599",
+    "Text": "Pillars, Pits & Network Boxes - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "",
+    "WorkType": 2
+  },
+  {
+    "Id": 49,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 50,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 51,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 52,
+    "Code": "CO1699",
+    "Text": "Overhead Switchgear - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Overhead Switch",
+    "WorkType": 2
+  },
+  {
+    "Id": 53,
+    "Code": "CO1699",
+    "Text": "Overhead Switchgear - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Overhead Switch",
+    "WorkType": 2
+  },
+  {
+    "Id": 54,
+    "Code": "CD1499",
+    "Text": "Distribution Switchgear - Groundmounted - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Distribution Switchgear - Groundmounted",
+    "WorkType": 2
+  },
+  {
+    "Id": 55,
+    "Code": "CD1499",
+    "Text": "Distribution Switchgear - Groundmounted - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Distribution Switchgear - Groundmounted",
+    "WorkType": 2
+  },
+  {
+    "Id": 56,
+    "Code": "CU1599",
+    "Text": "Pillars, Pits & Network Boxes - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "",
+    "WorkType": 2
+  },
+  {
+    "Id": 57,
+    "Code": "CU1599",
+    "Text": "Pillars, Pits & Network Boxes - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "",
+    "WorkType": 2
+  },
+  {
+    "Id": 58,
+    "Code": "CU1599",
+    "Text": "Pillars, Pits & Network Boxes - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "",
+    "WorkType": 2
+  },
+  {
+    "Id": 59,
+    "Code": "CU1599",
+    "Text": "Pillars, Pits & Network Boxes - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "",
+    "WorkType": 2
+  },
+  {
+    "Id": 60,
+    "Code": "CO1699",
+    "Text": "Overhead Switchgear - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Overhead Switch",
+    "WorkType": 2
+  },
+  {
+    "Id": 61,
+    "Code": "CO1699",
+    "Text": "Overhead Switchgear - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Overhead Switch",
+    "WorkType": 2
+  },
+  {
+    "Id": 62,
+    "Code": "AO2000",
+    "Text": "Install 3 Ampacs",
+    "Description": "3 ampact connectors where no other work is being carried out on the pole. To be used in conjunction with other works within the area. Installation only.  Material cost of Ampac Not included",
+    "Group": "Connectors",
+    "WorkType": 3
+  },
+  {
+    "Id": 63,
+    "Code": "AO3000",
+    "Text": "Extension of overhead conductors to cross arm (per circuit).",
+    "Description": "This is to be applied when pole is located further away from the existing pole or pole is replaced with a taller pole, resulting in the network/service circuit needing to be extended.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 64,
+    "Code": "CO1009",
+    "Text": "Low LV wires to re-sag (below regulatory height)",
+    "Description": "Retention all wires in LV span.  Rate per span. ",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 65,
+    "Code": "CO1009",
+    "Text": "Low LV wires to re-sag (below regulatory height)",
+    "Description": "Retention all wires in LV span.  Rate per span. ",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 66,
+    "Code": "CO1009",
+    "Text": "Low LV wires to re-sag (below regulatory height)",
+    "Description": "Retention all wires in LV span.  Rate per span. ",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 67,
+    "Code": "AM2208",
+    "Text": "Create & Reinstate Liveline Break",
+    "Description": "Cut and reinstate break.  To be used in conjunction with the pole replacement.",
+    "Group": "Maybe?",
+    "WorkType": 3
+  },
+  {
+    "Id": 68,
+    "Code": "CO1019",
+    "Text": "Replace 400V pin & rebind ",
+    "Description": "Supply and install 1 replacement 400V pin insulator and rebind live.",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 69,
+    "Code": "CO1020",
+    "Text": "Replacement of LV shackle straps and/or insulator",
+    "Description": "Supply and install 1 replacement set of 400V shackle straps and/or insulator and retensioning of conductor, live.",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 70,
+    "Code": "CO1018",
+    "Text": "Replace 11kV pin & rebind ",
+    "Description": "Supply and install 1 replacement 11kV pin insulator and rebind using G&B",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 71,
+    "Code": "CO1028",
+    "Text": "Replace 33kV pin insulator energised",
+    "Description": "Supply and install replacement 33kV pin insulator using G & B ",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 72,
+    "Code": "CO1018",
+    "Text": "Replace 11kV pin & rebind ",
+    "Description": "Supply and install 1 replacement 11kV pin insulator and rebind using G&B",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 73,
+    "Code": "CO1029",
+    "Text": "Replace 3 x 33kV strain insulators",
+    "Description": "Supply and install replacement 33kV strain insulator using G & B ",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 74,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 75,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 76,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 77,
+    "Code": "CO1007",
+    "Text": "Defective lightning arrestor (each)",
+    "Description": "Supply and install lighting arrestor as per Vector standards.  Assume installation G&B methods",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 78,
+    "Code": "CO1007",
+    "Text": "Defective lightning arrestor (each)",
+    "Description": "Supply and install lighting arrestor as per Vector standards.  Assume installation G&B methods",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 79,
+    "Code": "CD1402",
+    "Text": "FPI Faulty",
+    "Description": "Arrange shutdown, investigate and make minor repairs.  Test operation prior to relivening.",
+    "Group": "Distribution Switchgear - Groundmounted",
+    "WorkType": 2
+  },
+  {
+    "Id": 80,
+    "Code": "AO1215",
+    "Text": "",
+    "Description": "",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 81,
+    "Code": "AM2219",
+    "Text": "Installation of LV knife links",
+    "Description": "Price for the installation of LV knife links (set of 3 fused or solid) to include re-termination of LV cables.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 82,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 83,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 84,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 85,
+    "Code": "AO1400",
+    "Text": "Install 1 pilot service fuse",
+    "Description": "Includes 1 Michaud IPC fuse connector, cu lead, fuse link, all shackle insulators, any connectors and dead ends,  This unit also includes re-sagging of pilot service conductors. This unit rates shall also be used where an LV underground service is relocated to the pole without lengthening of the  service main",
+    "Group": "Service Fuse",
+    "WorkType": 3
+  },
+  {
+    "Id": 86,
+    "Code": "AO1500",
+    "Text": "Installation of <100kVA OH Hanging transformer",
+    "Description": "Installation of replacement <100kVA pole mounted TX, including all TX bearer arms, live leads to 400v overhead lines, connectors. Please note that EDO and its associated arms and fitting are not included in this rate. (See unit rate above) Tx free issue. ",
+    "Group": "Transformer",
+    "WorkType": 3
+  },
+  {
+    "Id": 87,
+    "Code": "AO1600",
+    "Text": "Replace with Manual Gas switch on pole (no Motor)",
+    "Description": "Includes the installation of new SF6 Gas switch top or side mount, top mount or side mount brackets, pipe handle  and Ampact connectors. Switch and bracketry is free issue. See END-1008 and END-1009",
+    "Group": "Replace ABS with SF6 Gas Switch (excludes complex pole design refer rate above if required)",
+    "WorkType": 3
+  },
+  {
+    "Id": 88,
+    "Code": "CO1699",
+    "Text": "",
+    "Description": "",
+    "Group": "",
+    "WorkType": 2
+  },
+  {
+    "Id": 89,
+    "Code": "AO1600",
+    "Text": "Replace with Manual Gas switch on pole (no Motor)",
+    "Description": "Includes the installation of new SF6 Gas switch top or side mount, top mount or side mount brackets, pipe handle  and Ampact connectors. Switch and bracketry is free issue. See END-1008 and END-1009",
+    "Group": "Replace ABS with SF6 Gas Switch (excludes complex pole design refer rate above if required)",
+    "WorkType": 3
+  },
+  {
+    "Id": 90,
+    "Code": "AO1700",
+    "Text": "Replacement/installation of recloser",
+    "Description": "Includes the installation of new recloser, ampact connectors, arrestors, control panel and communication link and testing. Recloser, arrestors and mounting brackets are free issue. See END-1020",
+    "Group": "Recloser",
+    "WorkType": 3
+  },
+  {
+    "Id": 91,
+    "Code": "AO1700",
+    "Text": "Replacement/installation of recloser",
+    "Description": "Includes the installation of new recloser, ampact connectors, arrestors, control panel and communication link and testing. Recloser, arrestors and mounting brackets are free issue. See END-1020",
+    "Group": "Recloser",
+    "WorkType": 3
+  },
+  {
+    "Id": 92,
+    "Code": "AO1900",
+    "Text": "Replacement of a HV riser, termination and new straight joint where the cable is =<35mm2 Cu/Al",
+    "Description": "Includes XLPE cable, termination kit, termination bracket with insulators, straight joint kit, plastic cable cover with brackets, bolts, ampact and other connectors and earthing, including posts and connectors. Excludes earthing",
+    "Group": "Cable Terminations",
+    "WorkType": 3
+  },
+  {
+    "Id": 93,
+    "Code": "AO1900",
+    "Text": "Replacement of a HV riser, termination and new straight joint where the cable is =<35mm2 Cu/Al",
+    "Description": "Includes XLPE cable, termination kit, termination bracket with insulators, straight joint kit, plastic cable cover with brackets, bolts, ampact and other connectors and earthing, including posts and connectors. Excludes earthing",
+    "Group": "Cable Terminations",
+    "WorkType": 3
+  },
+  {
+    "Id": 94,
+    "Code": "AO1902",
+    "Text": "Replacement of a large LV riser and new straight joint per cable >65mm2 3 phase cable",
+    "Description": "Includes XLPE cable, termination kit, termination bracket with insulators, straight joint kit, plastic cable cover with brackets, bolts, ampact and other connectors and earthing, including posts and connectors. Excludes earthing",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 95,
+    "Code": "AO1902",
+    "Text": "Replacement of a large LV riser and new straight joint per cable >65mm2 3 phase cable",
+    "Description": "Includes XLPE cable, termination kit, termination bracket with insulators, straight joint kit, plastic cable cover with brackets, bolts, ampact and other connectors and earthing, including posts and connectors. Excludes earthing",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 96,
+    "Code": "CZ2199",
+    "Text": "Zone Substations and Ripple Plants Grounds and Buildings - free Text",
+    "Description": "For use with time and materials",
+    "Group": "Zone Substations and Ripple Plants Grounds and Buildings",
+    "WorkType": 2
+  },
+  {
+    "Id": 97,
+    "Code": "AU2116",
+    "Text": "Extend pillar tails three phase",
+    "Description": "Supply and install three phase cable to reloacte pillar as required to correct access issue or prevent further damage.  Per metre.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 98,
+    "Code": "AO1900",
+    "Text": "Replacement of a HV riser, termination and new straight joint where the cable is =<35mm2 Cu/Al",
+    "Description": "Includes XLPE cable, termination kit, termination bracket with insulators, straight joint kit, plastic cable cover with brackets, bolts, ampact and other connectors and earthing, including posts and connectors. Excludes earthing",
+    "Group": "Cable Terminations",
+    "WorkType": 3
+  },
+  {
+    "Id": 99,
+    "Code": "CD2001",
+    "Text": "Earthing connections/conductor missing/damaged",
+    "Description": "Remake and replace earthing connections/conductor.  Includes above ground connections and up to 10m of conductor replacement.",
+    "Group": "",
+    "WorkType": 2
+  },
+  {
+    "Id": 100,
+    "Code": "CU1599",
+    "Text": "Pillars, Pits & Network Boxes - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pillars, Pits & Network Boxes",
+    "WorkType": 2
+  },
+  {
+    "Id": 101,
+    "Code": "AU2100",
+    "Text": "Replace 1 phase pillar with a 1 ph eco pillar + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "Pillars and Pits (Note 8)",
+    "WorkType": 3
+  },
+  {
+    "Id": 102,
+    "Code": "AU2101",
+    "Text": "Replace 1 phase pillar with a pit + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails and earth pin. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 103,
+    "Code": "AU2101",
+    "Text": "Replace 1 phase pillar with a pit + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails and earth pin. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 104,
+    "Code": "AU2101",
+    "Text": "Replace 1 phase pillar with a pit + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails and earth pin. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 105,
+    "Code": "AU2103",
+    "Text": "Replace 3 phase 3-way 60/100A pillar with a pit + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 106,
+    "Code": "AU2102",
+    "Text": "Replace 3 phase 3-way 60/100A pillar with an equivalent eco pillar + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 107,
+    "Code": "AU2103",
+    "Text": "Replace 3 phase 3-way 60/100A pillar with a pit + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 108,
+    "Code": "AU2103",
+    "Text": "Replace 3 phase 3-way 60/100A pillar with a pit + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 109,
+    "Code": "AU2104",
+    "Text": "",
+    "Description": "",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 110,
+    "Code": "AU2105",
+    "Text": "Replace 3 phase 6-way 60/100A pillar with 1 x 3phase pit + Pilot",
+    "Description": "Supply & installation of replacement pit/pillar and fusing as per type specified. Includes any required re-termination of tails. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 111,
+    "Code": "AU2118",
+    "Text": "Replace junction pillar with equivalent ecopillar",
+    "Description": "Replace junction pillar with equivalent ecopillar - Supply and install junction pillar (ecopillar type) as per Vector standard END-2022. Includes any required re-termination of tails. Excavation/reinstatement in soil/grass only. Excludes rock or special reinstatement.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 112,
+    "Code": "AU2119",
+    "Text": "Replace link pillar with equivalent ecopillar",
+    "Description": "Replace link pillar with equivalent ecopillar - Supply and install link pillar (ecopillar type) as per Vector standard END-2023. Includes any required re-termination of tails. Excavation/reinstatement in soil/grass only. Excludes rock or special reinstatement. ",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 113,
+    "Code": "AU2118",
+    "Text": "Replace junction pillar with equivalent ecopillar",
+    "Description": "Replace junction pillar with equivalent ecopillar - Supply and install junction pillar (ecopillar type) as per Vector standard END-2022. Includes any required re-termination of tails. Excavation/reinstatement in soil/grass only. Excludes rock or special reinstatement.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 114,
+    "Code": "AU2119",
+    "Text": "Replace link pillar with equivalent ecopillar",
+    "Description": "Replace link pillar with equivalent ecopillar - Supply and install link pillar (ecopillar type) as per Vector standard END-2023. Includes any required re-termination of tails. Excavation/reinstatement in soil/grass only. Excludes rock or special reinstatement. ",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 115,
+    "Code": "AU2118",
+    "Text": "Replace junction pillar with equivalent ecopillar",
+    "Description": "Replace junction pillar with equivalent ecopillar - Supply and install junction pillar (ecopillar type) as per Vector standard END-2022. Includes any required re-termination of tails. Excavation/reinstatement in soil/grass only. Excludes rock or special reinstatement.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 116,
+    "Code": "AU2114",
+    "Text": "Replace 3 phase 4 fuses 60/100A pillar with an equivalent eco pillar + Pilot",
+    "Description": "Supply & installation of replacement eco pillar and fusing as per type specified. Includes any required re-termination of tails. Excavation/Reinstatement in soil/grass only. Excludes rock or special reinstatement",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 117,
+    "Code": "CU1509",
+    "Text": "Replace 2 way panel",
+    "Description": "Supply and install replacement 2 way panel. Includes shutdown, cable re-termination & testing",
+    "Group": "Pillars, Pits & Network Boxes",
+    "WorkType": 2
+  },
+  {
+    "Id": 118,
+    "Code": "CU1510",
+    "Text": "Replace 3 way panel",
+    "Description": "Supply and install replacement 3 way panel includes shutdown, cable re-termination & testing",
+    "Group": "Pillars, Pits & Network Boxes",
+    "WorkType": 2
+  },
+  {
+    "Id": 119,
+    "Code": "AO1506",
+    "Text": "Decompound HV termination (when replacing tx)  Decompound cable termination (transformer or switchgear ) ",
+    "Description": "Decompounding of HV compound termination on Ground Mounted transformer - Rate only applies when transformer is also being replaced. Includes all materials and labour required to decompound a termination on a distribution transformer or switch. Also includes the correct disposal of all associated waste.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 120,
+    "Code": "AO1508",
+    "Text": "Extend HV XLPE termination  (when replacing tx)",
+    "Description": "Includes HV straight joint and HV termination, excavation, backfill and reinstatement of joint hole. To be used where existing HV termination requires extending- Rate only applies when transformer is also being replaced.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 121,
+    "Code": "AO1508",
+    "Text": "Extend HV XLPE termination  (when replacing tx)",
+    "Description": "Includes HV straight joint and HV termination, excavation, backfill and reinstatement of joint hole. To be used where existing HV termination requires extending- Rate only applies when transformer is also being replaced.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 122,
+    "Code": "AO1508",
+    "Text": "Extend HV XLPE termination  (when replacing tx)",
+    "Description": "Includes HV straight joint and HV termination, excavation, backfill and reinstatement of joint hole. To be used where existing HV termination requires extending- Rate only applies when transformer is also being replaced.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 123,
+    "Code": "AO1508",
+    "Text": "Extend HV XLPE termination  (when replacing tx)",
+    "Description": "Includes HV straight joint and HV termination, excavation, backfill and reinstatement of joint hole. To be used where existing HV termination requires extending- Rate only applies when transformer is also being replaced.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 124,
+    "Code": "AO1504",
+    "Text": "Installation of >100kVA GM transformer",
+    "Description": "Installation of replacement Ground Mounted 100kVA or > Tx, live leads to overhead lines, connectors. Tx free issue.  Excludes Pad ",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 125,
+    "Code": "AO1505",
+    "Text": "Replacement of GM transformer (normal access)",
+    "Description": "Replacement of Ground Mounted Tx, retermination of LV / HV. Includes rebooting of HV termination, HV switching. Excludes decompounding of termination, dismantle and reassembly of 'tincan' enclosure, extending HV / LV terminations. Tx free issue.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 126,
+    "Code": "CD1199",
+    "Text": "",
+    "Description": "",
+    "Group": "Time & Materials",
+    "WorkType": 2
+  },
+  {
+    "Id": 127,
+    "Code": "AO1514",
+    "Text": "Repair/replace TINCAN enclosure",
+    "Description": "Repair/replace defective TINCAN enclosure. Includes removal of defective canopy, installation of new canopy, advertised shutdown, basic traffic management. Excludes switching, LV linking, generation or level 2 or above traffic management.",
+    "Group": "",
+    "WorkType": 3
+  },
+  {
+    "Id": 128,
+    "Code": "CD1199",
+    "Text": "Substation - Free Text",
+    "Description": "For use with time and materials.",
+    "Group": "Substation - Ground Mounted",
+    "WorkType": 2
+  },
+  {
+    "Id": 129,
+    "Code": "CD1199",
+    "Text": "Substation - Free Text",
+    "Description": "For use with time and materials.",
+    "Group": "Substation - Ground Mounted",
+    "WorkType": 2
+  },
+  {
+    "Id": 130,
+    "Code": "CZ2104",
+    "Text": "Locks/damaged faulty",
+    "Description": "Repair or replace damaged or faulty lock.  Excludes repair or replacement of substation door.",
+    "Group": "Zone Substations and Ripple Plants Grounds and Buildings",
+    "WorkType": 2
+  },
+  {
+    "Id": 131,
+    "Code": "CU1518",
+    "Text": "Cap LV service",
+    "Description": "Supply and install live sealing end on service main.  For situations where pillar is nolonger required.",
+    "Group": "Pillars, Pits & Network Boxes",
+    "WorkType": 2
+  },
+  {
+    "Id": 132,
+    "Code": "CD1399",
+    "Text": "LV Frame - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "LV Frame",
+    "WorkType": 2
+  },
+  {
+    "Id": 133,
+    "Code": "CD1301",
+    "Text": "MDI defective",
+    "Description": "Supply and replace defective MDI.  Assume single MDI.",
+    "Group": "LV Frame",
+    "WorkType": 2
+  },
+  {
+    "Id": 134,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  },
+  {
+    "Id": 135,
+    "Code": "CO1099",
+    "Text": "Pole - Free Text",
+    "Description": "For use with time and materials",
+    "Group": "Pole",
+    "WorkType": 2
+  }
+]

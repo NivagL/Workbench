@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-select placeholder="Damage Sub Cause" 
+    (selectionChange)="onSelection($event.value)">
+    <mat-option *ngFor="let item of list|async" [value]="item">
+      {{item.Text}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

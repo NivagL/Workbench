@@ -1,0 +1,40 @@
+@media (min-width: 768px) { 
+    .container {
+        display: grid;
+        height: 95vh;
+        width: 95vw;
+        grid-gap: 10px;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .left-top {
+        background-color: lightblue;
+        grid-column: 1, 2;
+    }
+
+    .right-bottom {
+        background-color: lightgreen;
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 767px) { 
+    .container {
+        display: grid;
+        height: 95vh;
+        width: 95vw;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .left-top {
+        background-color: lightblue;
+        grid-row: 1;
+    }
+
+    .right-bottom {
+        background-color: lightgreen;
+        grid-row: 2;
+    }
+}

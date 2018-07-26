@@ -1,0 +1,417 @@
+[
+  {
+    "Id": 1,
+    "Text": "Crossarm",
+    "AssetType": 1
+  },
+  {
+    "Id": 2,
+    "Text": "Insulator (pin)",
+    "AssetType": 1
+  },
+  {
+    "Id": 3,
+    "Text": "Insulator (strain)",
+    "AssetType": 1
+  },
+  {
+    "Id": 4,
+    "Text": "Binder",
+    "AssetType": 1
+  },
+  {
+    "Id": 5,
+    "Text": "Conductor",
+    "AssetType": 1
+  },
+  {
+    "Id": 6,
+    "Text": "Connector (wedge/ampact)",
+    "AssetType": 1
+  },
+  {
+    "Id": 7,
+    "Text": "Connector (live-line tap)",
+    "AssetType": 1
+  },
+  {
+    "Id": 8,
+    "Text": "Connector (IPC)",
+    "AssetType": 1
+  },
+  {
+    "Id": 9,
+    "Text": "Connector (linetap/split-bolt)",
+    "AssetType": 1
+  },
+  {
+    "Id": 10,
+    "Text": "Connector (inline compression)",
+    "AssetType": 1
+  },
+  {
+    "Id": 11,
+    "Text": "Connector (parallel groove)",
+    "AssetType": 1
+  },
+  {
+    "Id": 12,
+    "Text": "Jumper",
+    "AssetType": 1
+  },
+  {
+    "Id": 13,
+    "Text": "Crossarm Brace",
+    "AssetType": 1
+  },
+  {
+    "Id": 14,
+    "Text": "Earthing system",
+    "AssetType": 1
+  },
+  {
+    "Id": 15,
+    "Text": "Crossarm bolt",
+    "AssetType": 1
+  },
+  {
+    "Id": 16,
+    "Text": "Riser",
+    "AssetType": 1
+  },
+  {
+    "Id": 17,
+    "Text": "Foundation/Stay/Anchor",
+    "AssetType": 1
+  },
+  {
+    "Id": 18,
+    "Text": "Pole",
+    "AssetType": 1
+  },
+  {
+    "Id": 19,
+    "Text": "Fuse/link",
+    "AssetType": 1
+  },
+  {
+    "Id": 20,
+    "Text": "Lightning Arrestor",
+    "AssetType": 1
+  },
+  {
+    "Id": 21,
+    "Text": "Relay/control circuit/photocell",
+    "AssetType": 1
+  },
+  {
+    "Id": 22,
+    "Text": "Fuse Carrier",
+    "AssetType": 1
+  },
+  {
+    "Id": 1,
+    "Text": "Cast Metal",
+    "AssetType": 2
+  },
+  {
+    "Id": 2,
+    "Text": "Ceramic",
+    "AssetType": 2
+  },
+  {
+    "Id": 3,
+    "Text": "Heat Shrink",
+    "AssetType": 2
+  },
+  {
+    "Id": 1,
+    "Text": "OH Switch",
+    "AssetType": 3
+  },
+  {
+    "Id": 2,
+    "Text": "Load Break Device",
+    "AssetType": 3
+  },
+  {
+    "Id": 3,
+    "Text": "Insulator",
+    "AssetType": 3
+  },
+  {
+    "Id": 4,
+    "Text": "Gas Gauge",
+    "AssetType": 3
+  },
+  {
+    "Id": 5,
+    "Text": "Operating assembly",
+    "AssetType": 3
+  },
+  {
+    "Id": 6,
+    "Text": "Control Cabinet",
+    "AssetType": 3
+  },
+  {
+    "Id": 7,
+    "Text": "Connector (wedge/ampact)",
+    "AssetType": 3
+  },
+  {
+    "Id": 8,
+    "Text": "Connector (IPC)",
+    "AssetType": 3
+  },
+  {
+    "Id": 9,
+    "Text": "Connector (linetap/split-bolt)",
+    "AssetType": 3
+  },
+  {
+    "Id": 10,
+    "Text": "Earthing system",
+    "AssetType": 3
+  },
+  {
+    "Id": 1,
+    "Text": "Mounting equipment",
+    "AssetType": 4
+  },
+  {
+    "Id": 2,
+    "Text": "Earthing System",
+    "AssetType": 4
+  },
+  {
+    "Id": 3,
+    "Text": "Connector (wedge/ampact)",
+    "AssetType": 4
+  },
+  {
+    "Id": 4,
+    "Text": "Connector (IPC)",
+    "AssetType": 4
+  },
+  {
+    "Id": 5,
+    "Text": "Connector (linetap/split-bolt)",
+    "AssetType": 4
+  },
+  {
+    "Id": 6,
+    "Text": "Transformer",
+    "AssetType": 5
+  },
+  {
+    "Id": 7,
+    "Text": "Tx bushing",
+    "AssetType": 5
+  },
+  {
+    "Id": 8,
+    "Text": "Busbar",
+    "AssetType": 5
+  },
+  {
+    "Id": 9,
+    "Text": "Cable Termination",
+    "AssetType": 5
+  },
+  {
+    "Id": 10,
+    "Text": "Tap Changer",
+    "AssetType": 5
+  },
+  {
+    "Id": 1,
+    "Text": "Earthing System",
+    "AssetType": 6
+  },
+  {
+    "Id": 2,
+    "Text": "Enclosure/Door",
+    "AssetType": 6
+  },
+  {
+    "Id": 3,
+    "Text": "Foundation",
+    "AssetType": 6
+  },
+  {
+    "Id": 4,
+    "Text": "Substation",
+    "AssetType": 6
+  },
+  {
+    "Id": 5,
+    "Text": "Pilot Relay",
+    "AssetType": 6
+  },
+  {
+    "Id": 6,
+    "Text": "Transformer",
+    "AssetType": 6
+  },
+  {
+    "Id": 7,
+    "Text": "Tx bushing",
+    "AssetType": 7
+  },
+  {
+    "Id": 8,
+    "Text": "Busbar",
+    "AssetType": 7
+  },
+  {
+    "Id": 9,
+    "Text": "Cable Termination",
+    "AssetType": 7
+  },
+  {
+    "Id": 10,
+    "Text": "Tap Changer",
+    "AssetType": 7
+  },
+  {
+    "Id": 1,
+    "Text": "Fuse/links",
+    "AssetType": 8
+  },
+  {
+    "Id": 2,
+    "Text": "Connectors",
+    "AssetType": 8
+  },
+  {
+    "Id": 3,
+    "Text": "Cable Termination",
+    "AssetType": 8
+  },
+  {
+    "Id": 4,
+    "Text": "Pilot Relay",
+    "AssetType": 8
+  },
+  {
+    "Id": 5,
+    "Text": "Fuse Carrier",
+    "AssetType": 8
+  },
+  {
+    "Id": 1,
+    "Text": "Cable Termination",
+    "AssetType": 9
+  },
+  {
+    "Id": 2,
+    "Text": "Switch Unit",
+    "AssetType": 9
+  },
+  {
+    "Id": 3,
+    "Text": "Tank",
+    "AssetType": 9
+  },
+  {
+    "Id": 4,
+    "Text": "Busbar/Coupler",
+    "AssetType": 9
+  },
+  {
+    "Id": 5,
+    "Text": "Fuse",
+    "AssetType": 9
+  },
+  {
+    "Id": 6,
+    "Text": "Earthing System",
+    "AssetType": 9
+  },
+  {
+    "Id": 1,
+    "Text": "Fuse",
+    "AssetType": 10
+  },
+  {
+    "Id": 2,
+    "Text": "Fuse carrier",
+    "AssetType": 10
+  },
+  {
+    "Id": 3,
+    "Text": "Cable Termination",
+    "AssetType": 10
+  },
+  {
+    "Id": 4,
+    "Text": "Connector (elliptical/cap)",
+    "AssetType": 10
+  },
+  {
+    "Id": 5,
+    "Text": "Connector (IPC)",
+    "AssetType": 10
+  },
+  {
+    "Id": 6,
+    "Text": "Connector (gelport)",
+    "AssetType": 10
+  },
+  {
+    "Id": 7,
+    "Text": "Connector (linetap/split-bolt)",
+    "AssetType": 10
+  },
+  {
+    "Id": 8,
+    "Text": "Earthing System",
+    "AssetType": 10
+  },
+  {
+    "Id": 9,
+    "Text": "Enclosure",
+    "AssetType": 10
+  },
+  {
+    "Id": 1,
+    "Text": "Joint",
+    "AssetType": 11
+  },
+  {
+    "Id": 1,
+    "Text": "Joint",
+    "AssetType": 12
+  },
+  {
+    "Id": 1,
+    "Text": "PILC",
+    "AssetType": 13
+  },
+  {
+    "Id": 2,
+    "Text": "XLPE",
+    "AssetType": 13
+  },
+  {
+    "Id": 3,
+    "Text": "Oil Insulated",
+    "AssetType": 13
+  },
+  {
+    "Id": 4,
+    "Text": "Gas Insulated",
+    "AssetType": 13
+  },
+  {
+    "Id": 5,
+    "Text": "Other",
+    "AssetType": 13
+  },
+  {
+    "Id": 6,
+    "Text": "Data",
+    "AssetType": 13
+  }
+]

@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="column">
+        <br/>
+        <app-network-type></app-network-type>
+        <app-asset-type></app-asset-type>
+        <app-asset-sub-type></app-asset-sub-type>
+
+        <br/>
+        <mat-form-field class="block" appearance="fill">
+            <mat-label>Equipment Id</mat-label>
+            <input matInput placeholder="EquipmentId">
+            <!-- <mat-hint>Hint useful?</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field class="block" appearance="fill">
+            <mat-label>GIS Id</mat-label>
+            <input matInput placeholder="GISId">
+            <!-- <mat-hint>GIS Id</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field class="block" appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput placeholder="Address">
+            <!-- <mat-hint>Address</mat-hint> -->
+        </mat-form-field>
+    </div>
+    <div class="column">
+        <br/>
+        <app-task-category></app-task-category>
+        <app-task-type></app-task-type>
+
+        <br/>
+        <div class="block">
+            <app-damage
+                (onSelected)="onDamage($event)"
+            ></app-damage>
+        </div>
+        <app-damage-cause
+            (onSelected)="onCause($event)"
+        ></app-damage-cause>
+        <app-damage-sub-cause
+            (onSelected)="onSubCause($event)"
+            [cause]="cause"
+        ></app-damage-sub-cause>
+
+        <br/>
+        <mat-form-field class="block">
+            <textarea 
+                matInput 
+                placeholder="Fault details"
+            ></textarea>
+        </mat-form-field>
+        
+    </div>
+</div>

@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 0,
+    "Code":  "E-ENVIR",
+    "Text": "Adverse environment"
+  },
+  {
+    "Id": 1,
+    "Code": "E-LIGHT",
+    "Text": "Lightning"
+  },
+  {
+    "Id": 2,
+    "Code": "E-ANIM",
+    "Text": "Animal"
+  },
+  {
+    "Id": 3,
+    "Code": "E-CAUSE",
+    "Text": "Cause unknown"
+  },
+  {
+    "Id": 4,
+    "Code": "E-3PARTY",
+    "Text": "Third party interference"
+  },
+  {
+    "Id": 5,
+    "Code": "E-VECTOR",
+    "Text": "Vector related party"
+  },
+  {
+    "Id": 6,
+    "Code": "E-VEGE",
+    "Text": "Vegetation"
+  },
+  {
+    "Id": 7,
+    "Code": "E-EQDEF",
+    "Text": "Equipment defect"
+  },
+  {
+    "Id": 8,
+    "Code": "E-TEMP",
+    "Text": "Temp Disco / Reco"
+  }
+]

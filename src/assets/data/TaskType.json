@@ -1,0 +1,278 @@
+[
+  {
+    "Id": 1,
+    "Code": "Cable Strike",
+    "Text": "A non-vector party damaged an underground or overhead electricity cable",
+    "CategoryId": 1
+  },
+  {
+    "Id": 2,
+    "Code": "Car v Pillar",
+    "Text": "A vehicle hit a pillar",
+    "CategoryId": 1
+  },
+  {
+    "Id": 3,
+    "Code": "Car v Pole",
+    "Text": "A vehicle hit a pole",
+    "CategoryId": 1
+  },
+  {
+    "Id": 4,
+    "Code": "Car v Transformer",
+    "Text": "A vehicle hit a ground mounted substation.",
+    "CategoryId": 1
+  },
+  {
+    "Id": 5,
+    "Code": "Lines Down",
+    "Text": "A third party has caused lines to come down. If it is the result of a pole being hit select subtype Car v Pole",
+    "CategoryId": 1
+  },
+  {
+    "Id": 6,
+    "Code": "Issue Close Approach Permit",
+    "Text": "A close approach permit is required to work near Vector lines.",
+    "CategoryId": 2
+  },
+  {
+    "Id": 7,
+    "Code": "Stolen Earths",
+    "Text": "The FSP reports earths are missing",
+    "CategoryId": 2
+  },
+  {
+    "Id": 8,
+    "Code": "Shoes on lines",
+    "Text": "Shoes are observed hanging over the power lines",
+    "CategoryId": 2
+  },
+  {
+    "Id": 9,
+    "Code": "Check Relay",
+    "Text": "FSP to visit and bridge hot water relay.",
+    "CategoryId": 3
+  },
+  {
+    "Id": 10,
+    "Code": "No Hot Water",
+    "Text": "Customer reports that there is no hot water at premise",
+    "CategoryId": 3
+  },
+  {
+    "Id": 11,
+    "Code": "Pilot Fault",
+    "Text": "Hot water pilot line has faulted causing a loss of hot water. Northern network only.",
+    "CategoryId": 3
+  },
+  {
+    "Id": 12,
+    "Code": "Gas Cable Low Pressure",
+    "Text": "Reported by EOC",
+    "CategoryId": 4
+  },
+  {
+    "Id": 13,
+    "Code": "Oil Cable Low Pressure",
+    "Text": "Reported by EOC",
+    "CategoryId": 4
+  },
+  {
+    "Id": 14,
+    "Code": "Hazardous Tree",
+    "Text": "A customer has reported a tree touching lines causing sparking, or lines are touching the tree causing the tree to conduct electricity or the tree has grown in a way someone could climb the tree and touch the lines.",
+    "CategoryId": 5
+  },
+  {
+    "Id": 15,
+    "Code": "Area Fault",
+    "Text": "Reported by EOC or as the result of a roll up",
+    "CategoryId": 6
+  },
+  {
+    "Id": 16,
+    "Code": "Feeder Fault",
+    "Text": "Reported by EOC or as the result of a roll up",
+    "CategoryId": 6
+  },
+  {
+    "Id": 17,
+    "Code": "Fluctuating  Power",
+    "Text": "Customer reports surges in power supply",
+    "CategoryId": 6
+  },
+  {
+    "Id": 18,
+    "Code": "No Power",
+    "Text": "Customer reports no power supply",
+    "CategoryId": 6
+  },
+  {
+    "Id": 19,
+    "Code": "Part Power",
+    "Text": "Customer reports intermittent power",
+    "CategoryId": 6
+  },
+  {
+    "Id": 20,
+    "Code": "33 kV + Fault",
+    "Text": "Reported by EOC",
+    "CategoryId": 6
+  },
+  {
+    "Id": 21,
+    "Code": "Check for Safety",
+    "Text": "A customer has a general safety concern that is not covered by any other request sub type",
+    "CategoryId": 7
+  },
+  {
+    "Id": 22,
+    "Code": "Damaged Pillar",
+    "Text": "A pillar has been reported as damaged and no 3rd party  is seen causing the damage",
+    "CategoryId": 7
+  },
+  {
+    "Id": 24,
+    "Code": "Damaged Transformer",
+    "Text": "A pillar has been reported as damaged and no 3rd party  is seen causing the damage",
+    "CategoryId": 0
+  },
+  {
+    "Id": 25,
+    "Code": "Damaged Pole",
+    "Text": "A pole has been reported as damaged and no 3rd party  is seen causing the damage",
+    "CategoryId": 0
+  },
+  {
+    "Id": 26,
+    "Code": "Electric Shocks",
+    "Text": "Customer has experienced an electric shock",
+    "CategoryId": 0
+  },
+  {
+    "Id": 27,
+    "Code": "Lines Down",
+    "Text": "Power lines are down and no 3rd party  is seen causing the damage",
+    "CategoryId": 0
+  },
+  {
+    "Id": 28,
+    "Code": "Leaning Pole",
+    "Text": "A power pole has been reported as leaning to one side.",
+    "CategoryId": 0
+  },
+  {
+    "Id": 29,
+    "Code": "Emergency Disconnection",
+    "Text": "An urgent disconnection is requested by EOC, emergency services[1]",
+    "CategoryId": 0
+  },
+  {
+    "Id": 30,
+    "Code": "Sparks",
+    "Text": "Sparks have been reported.",
+    "CategoryId": 0
+  },
+  {
+    "Id": 31,
+    "Code": "Technician",
+    "Text": "A zone substation fault requires a technician to attend",
+    "CategoryId": 8
+  },
+  {
+    "Id": 32,
+    "Code": "Faultman",
+    "Text": "A zone substation fault requires a Faultman to attend",
+    "CategoryId": 8
+  },
+  {
+    "Id": 33,
+    "Code": "Disconnection",
+    "Text": "A customer has requested a temporary disconnection[2]",
+    "CategoryId": 9
+  },
+  {
+    "Id": 34,
+    "Code": "Reconnection",
+    "Text": "A customer has requested a reconnection.  This should be a child request of the disconnection or related fault SR",
+    "CategoryId": 9
+  },
+  {
+    "Id": 35,
+    "Code": "Retailer Reco Request",
+    "Text": "A retailer has requested a reconnection",
+    "CategoryId": 9
+  },
+  {
+    "Id": 36,
+    "Code": "Commercial",
+    "Text": "Only to be used as an outcome of an initial fault investigation",
+    "CategoryId": 10
+  },
+  {
+    "Id": 37,
+    "Code": "Residential",
+    "Text": "Only to be used as an outcome of an initial fault investigation",
+    "CategoryId": 10
+  },
+  {
+    "Id": 38,
+    "Code": "Not working",
+    "Text": "A streetlight is not turning on at night",
+    "CategoryId": 11
+  },
+  {
+    "Id": 39,
+    "Code": "On all day",
+    "Text": "A streetlight is not turning off during the day",
+    "CategoryId": 11
+  },
+  {
+    "Id": 40,
+    "Code": "Pilot Fault",
+    "Text": "Generally used as part of a Roll-up",
+    "CategoryId": 11
+  },
+  {
+    "Id": 41,
+    "Code": "Access TF/Cust. Subst <30mins",
+    "Text": "Customer requires access to a substation room for less than 30 minutes.",
+    "CategoryId": 12
+  },
+  {
+    "Id": 42,
+    "Code": "Access TF/Cust. Subst >30mins",
+    "Text": "Customer requires access to a substation room for more than 30 minutes.",
+    "CategoryId": 12
+  },
+  {
+    "Id": 43,
+    "Code": "Transformer Isolates",
+    "Text": "Customer requests an isolation of a specific transformer.",
+    "CategoryId": 12
+  },
+  {
+    "Id": 44,
+    "Code": "Line Drop",
+    "Text": "A customer requires the temporary dropping of a Vector line.",
+    "CategoryId": 12
+  },
+  {
+    "Id": 45,
+    "Code": "Graffiti",
+    "Text": "Graffiti has been found on a Vector asset.",
+    "CategoryId": 12
+  },
+  {
+    "Id": 46,
+    "Code": "Fuse Identify & Label",
+    "Text": "A retailer has requested Vector identify and tag a fuse in a pillar/pit.",
+    "CategoryId": 0
+  },
+  {
+    "Id": 47,
+    "Code": "Switching (non-fault request)",
+    "Text": "",
+    "CategoryId": 0
+  }
+]

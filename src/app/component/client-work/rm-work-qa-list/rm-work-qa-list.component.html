@@ -1,0 +1,125 @@
+<!-- <div *ngIf="work|async; let work">
+    <div *ngIf="client|async; let client">
+    <h4>{{client.Text}} {{work.Text}}</h4>
+  </div>  
+</div>
+<br/> -->
+<mat-form-field>
+
+    <mat-select placeholder="Status" 
+        (change)="applyStatusFilter($event.value)" 
+        [formControl]="statusSelection"
+        [(ngModel)]="statusFilter"
+        >
+      <mat-option>all</mat-option>
+      <mat-option *ngFor="let status of status_list" [value]="status">
+        {{status}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <!-- <mat-form-field>
+    <mat-select placeholder="Enclosure" 
+        (change)="applyEnclosureFilter($event.value)" 
+        [formControl]="enclosureSelection"
+        [(ngModel)]="enclosureFilter"
+        >
+      <mat-option>all</mat-option>
+      <mat-option *ngFor="let enclosure of enclosure_list" [value]="enclosure">
+        {{enclosure}}</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+  
+  <mat-form-field>
+    <input matInput (keyup)="applyAddressFilter($event.target.value)" 
+    placeholder="Address"
+    [(ngModel)]="addressFilter"
+  ></mat-form-field>
+  
+  <!-- <i class='right' [ngClass]="config.iconSize" (click)="applyFilters()">search</i> -->
+  
+  <div class="mat-elevation-z8">
+  
+    <mat-table [dataSource]="dataSource" matSort dense>
+  
+      <ng-container matColumnDef="NetworkId">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> NetworkId </mat-header-cell>
+        <mat-cell *matCellDef="let i">
+          {{i.NetworkId}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="TaskCategory">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Category </mat-header-cell>
+        <mat-cell *matCellDef="let i">
+          {{i.TaskCategory}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="TaskType">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Type </mat-header-cell>
+        <mat-cell *matCellDef="let i">
+          {{i.TaskType}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="ReceivedDate">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> ReceivedDate </mat-header-cell>
+        <mat-cell *matCellDef="let i">
+          {{i.ReceivedDate}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Description">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Description </mat-header-cell>
+        <mat-cell *matCellDef="let i">
+          {{i.Description}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Ranking">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Ranking </mat-header-cell>
+        <mat-cell *matCellDef="let i">
+          {{i.Ranking}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Status">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
+        <mat-cell *matCellDef="let i">
+          {{i.Status}}
+          <!-- <span class="status-container">
+            <mat-chip *ngIf="i.Status=='Field Complete'" color="primary" selected='true'>{{i.Status[0]}}</mat-chip>
+            <mat-chip *ngIf="i.Status=='Sent to Owner'" color="accent" selected='true'>{{i.Status[0]}}</mat-chip>
+            <mat-chip *ngIf="i.Status=='QA Complete'" color="warn" selected='true'>{{i.Status[0]}}</mat-chip>
+            <mat-chip *ngIf="i.Status==''" color="warn" selected='false'>{{i.Status[0]}}</mat-chip>
+          </span> -->
+        </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="Address">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Address </mat-header-cell>
+        <mat-cell *matCellDef="let i">
+          {{i.Address}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Visits">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Visits </mat-header-cell>
+          <mat-cell *matCellDef="let i">
+            {{i.Visits}}
+          </mat-cell>
+        </ng-container>
+        
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns; let entry" 
+        (click)="onClickRow(row)" 
+        [ngClass]="{ 'selected': row.NetworkId == selectedNetworkId }">
+      </mat-row>
+    </mat-table>
+  
+    <mat-paginator 
+      [pageSize]="pageSize"
+      [pageSizeOptions]="pageSizeOptions"
+    ></mat-paginator>
+  
+  </div>

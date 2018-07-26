@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-select placeholder="Work Type" [(value)]="item">
+    <mat-option *ngFor="let item of list|async" [value]="item">
+      {{item.Text}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

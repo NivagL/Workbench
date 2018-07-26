@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "Code": "Leaking",
+    "Text": "Fluid or gas leaking or lost"
+  },
+  {
+    "Id": 2,
+    "Code": "Broken",
+    "Text": "Equipment is no longer working. "
+  },
+  {
+    "Id": 3,
+    "Code": "Impact damage",
+    "Text": "Mechanical damage from an external impact "
+  },
+  {
+    "Id": 4,
+    "Code": "Spalling/flaking",
+    "Text": "Pieces of equipment braking off "
+  },
+  {
+    "Id": 5,
+    "Code": "Chipped/cracked",
+    "Text": "Equipment has chips or cracks "
+  },
+  {
+    "Id": 6,
+    "Code": "Deformed",
+    "Text": "Bent out of original shape "
+  },
+  {
+    "Id": 7,
+    "Code": "Seized",
+    "Text": "Mechanism no longer moves freely "
+  },
+  {
+    "Id": 8,
+    "Code": "Arc damage",
+    "Text": "Thermal damage resulting from an uncontrolled electrical discharge "
+  },
+  {
+    "Id": 9,
+    "Code": "Overheating",
+    "Text": "Equipment has overheated (possibly to the point of burning/melting) for reasons other than uncontrolled electrical discharge "
+  },
+  {
+    "Id": 10,
+    "Code": "High Resistance",
+    "Text": "Equipment designed to have low electrical resistance is in a high-resistance state "
+  },
+  {
+    "Id": 11,
+    "Code": "Insulation breakdown",
+    "Text": "Equipment designed to have high electrical resistance is in a low-resistance state. Includes short-circuits "
+  },
+  {
+    "Id": 12,
+    "Code": "Missing/stolen",
+    "Text": "Asset not in the correct place, either stolen, incorrectly relocated by Vector personnel or was never there "
+  },
+  {
+    "Id": 13,
+    "Code": "Insecure/loose",
+    "Text": "Loose/poorly secured asset results in an electrical fault (does not include open substations or pillars etc.) "
+  },
+  {
+    "Id": 14,
+    "Code": "No damage evident",
+    "Text": "Asset responsible identified and undamaged (e.g. some tree contact cases) incl. transient and some instances where the installation is not to standard "
+  },
+  {
+    "Id": 15,
+    "Code": "Protection device operated",
+    "Text": "Protection device has operated avoiding damage to downstream assets "
+  },
+  {
+    "Id": 16,
+    "Code": "Not Found",
+    "Text": "Fault cause cannot be identified. May be a transient fault but cannot be confirmed e.g. possibly line clash or trees touching "
+  },
+  {
+    "Id": 17,
+    "Code": "Other",
+    "Text": "Use where no other type is appropriate; description of damage is mandatory "
+  },
+  {
+    "Id": 18,
+    "Code": "N/A",
+    "Text": "Assigning a Damage type is not applicable to this event"
+  }
+]

@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-select placeholder="Task Category" [(value)]="item">
+    <mat-option *ngFor="let item of list|async" [value]="item">
+      {{item.Code}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

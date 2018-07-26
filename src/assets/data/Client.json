@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Code": "Vector",
+    "Text": "Vector Energy",
+    "Region": "Auckland"
+  },
+  {
+    "Id": 2,
+    "Code": "Wellington",
+    "Text": "Wellington Energy",
+    "Region": "Wellington"
+  },
+  {
+    "Id": 3,
+    "Code": "Whangarie",
+    "Text": "Northpower Network",
+    "Region": "Northland"
+  }
+]

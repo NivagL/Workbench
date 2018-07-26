@@ -1,0 +1,27 @@
+[
+  {
+    "Id": 0,
+    "Code": "RM",
+    "Text": "Reactive Maintenance"
+  },
+  {
+    "Id": 1,
+    "Code": "PM",
+    "Text": "Preventative Maintenance"
+  },
+  {
+    "Id": 2,
+    "Code": "CM",
+    "Text": "Corrective Maintenance"
+  },
+  {
+    "Id": 3,
+    "Code": "AR",
+    "Text": "Asset Replacement"
+  },
+  {
+    "Id": 4,
+    "Code": "Capital",
+    "Text": "Competitive Work"
+  }
+]

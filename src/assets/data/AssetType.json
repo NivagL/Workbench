@@ -1,0 +1,106 @@
+[
+  {
+    "Id": 1,
+    "Code": "E-POLE",
+    "Text": "Pole",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_POLE_*",
+    "Catalog": "EOH"
+  },
+  {
+    "Id": 2,
+    "Code": "E-CBRISE",
+    "Text": "Cable Riser Termination",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_OH_SW_MV",
+    "Catalog": "EOH"
+  },
+  {
+    "Id": 3,
+    "Code": "E-OHSWGR",
+    "Text": "OH Switchgear (incl recloser)",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_OH_SW_MV",
+    "Catalog": "EOH"
+  },
+  {
+    "Id": 4,
+    "Code": "E-OHSTN",
+    "Text": "OH Substation",
+    "EquipFLOC": "FLOC",
+    "ObjectType": "0200_***_OHD_DSS*",
+    "Catalog": "EOH"
+  },
+  {
+    "Id": 5,
+    "Code": "E-OHSTN",
+    "Text": "OH Substation",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_TX_MV",
+    "Catalog": "EOH"
+  },
+  {
+    "Id": 6,
+    "Code": "E-GMSTN",
+    "Text": "GM Substation",
+    "EquipFLOC": "FLOC",
+    "ObjectType": "0200_***_DSS_GMS*",
+    "Catalog": "EDS"
+  },
+  {
+    "Id": 7,
+    "Code": "E-GMSTN",
+    "Text": "GM Substation",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_TX_MV",
+    "Catalog": "EDS"
+  },
+  {
+    "Id": 8,
+    "Code": "E-LVFRAM",
+    "Text": "LV Frame",
+    "EquipFLOC": "Equip",
+    "ObjectType": "SW_BD_LV",
+    "Catalog": "EUG"
+  },
+  {
+    "Id": 9,
+    "Code": "E-OHSGEA",
+    "Text": "GM Switchgear",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_SW_BD_MV",
+    "Catalog": "EDS"
+  },
+  {
+    "Id": 10,
+    "Code": "E-LVCAB",
+    "Text": "LV Cabinet/Link Pillar",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_LV_CAB or E_LV_LBOX",
+    "Catalog": "EUG"
+  },
+  {
+    "Id": 11,
+    "Code": "E-CBL",
+    "Text": "Cable Joint",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_JT_*",
+    "Catalog": "EUG"
+  },
+  {
+    "Id": 12,
+    "Code": "JT",
+    "Text": "Cable Joint",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_JT_*",
+    "Catalog": "EUG"
+  },
+  {
+    "Id": 13,
+    "Code": "E-CABLE",
+    "Text": "Cable",
+    "EquipFLOC": "Equip",
+    "ObjectType": "E_CBL_*",
+    "Catalog": "EUG"
+  }
+]

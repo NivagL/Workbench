@@ -1,0 +1,275 @@
+[
+  {
+    "Id": 0,
+    "CauseId": 0,
+    "Code": "0001",
+    "Text": "Earthquake",
+    "Description": "Earthquake damage"
+  },
+  {
+    "Id": 1,
+    "CauseId": 0,
+    "Code": "0002",
+    "Text": "Flood",
+    "Description": "Damage as a result of excessive ground water (including burst weather mains)"
+  },
+  {
+    "Id": 2,
+    "CauseId": 0,
+    "Code": "0003",
+    "Text": "Tornado",
+    "Description": "A genuine tornado, not high winds"
+  },
+  {
+    "Id": 3,
+    "CauseId": 0,
+    "Code": "0004",
+    "Text": "Landslip",
+    "Description": "Damage as a result of land moving (landslide or subsidence)"
+  },
+  {
+    "Id": 4,
+    "CauseId": 0,
+    "Code": "0005",
+    "Text": "Property/Bush Fire",
+    "Description": "When a property or bush fire is the cause of an electricity fault. I.E. the Fire was underway prior to power supply being affected.  Note: We would often expect to see a Fire Comms Reference code for these Reactive requests"
+  },
+  {
+    "Id": 5,
+    "CauseId": 1,
+    "Code": "0001",
+    "Text": "Lightning",
+    "Description": "Confirmed lightning damage"
+  },
+  {
+    "Id": 6,
+    "CauseId": 2,
+    "Code": "0001",
+    "Text": "Bird",
+    "Description": "Confirmed bird damage"
+  },
+  {
+    "Id": 7,
+    "CauseId": 2,
+    "Code": "0002",
+    "Text": "Possum",
+    "Description": "Confirmed possum damage"
+  },
+  {
+    "Id": 8,
+    "CauseId": 2,
+    "Code": "0003",
+    "Text": "Other",
+    "Description": "Confirmed damage caused by animal/insect apart from Bird or Possum "
+  },
+  {
+    "Id": 9,
+    "CauseId": 3,
+    "Code": "0001",
+    "Text": "Investigated",
+    "Description": "Where trip cause is investigated & not found but protection element is closed and holds (including patrolled where appropriate)"
+  },
+  {
+    "Id": 10,
+    "CauseId": 3,
+    "Code": "0002",
+    "Text": "Reclosed",
+    "Description": "If protection element is closed and holds, without investigating the cause"
+  },
+  {
+    "Id": 11,
+    "CauseId": 4,
+    "Code": "0001",
+    "Text": "Underground contact",
+    "Description": "UG equipment damaged by a third party ie. not a Vector related party. E.g. thruster hits cable"
+  },
+  {
+    "Id": 12,
+    "CauseId": 4,
+    "Code": "0002",
+    "Text": "Above ground contact",
+    "Description": "Accidental contact with above ground assets by a third party (excluding vehicle). E.g. kite in lines, branch cut by third party contacts lines, non-vegetation debris in lines, pillar damage (except by vehicle)"
+  },
+  {
+    "Id": 13,
+    "CauseId": 4,
+    "Code": "0003",
+    "Text": "Vandalism",
+    "Description": "Wilful damage, interference or theft eg. Graffiti, stolen earths"
+  },
+  {
+    "Id": 14,
+    "CauseId": 4,
+    "Code": "0004",
+    "Text": "Vehicle damage",
+    "Description": "Asset damage caused by a vehicle"
+  },
+  {
+    "Id": 15,
+    "CauseId": 4,
+    "Code": "0005",
+    "Text": "Other",
+    "Description": "Damage caused by a third party not in the other subcauses; description of cause is mandatory"
+  },
+  {
+    "Id": 16,
+    "CauseId": 5,
+    "Code": "0001",
+    "Text": "Accidental trip",
+    "Description": "Instances where a protection element operated but no fault exists downstream; a result of faulty protection settings or the actions of a party working for Vecto"
+  },
+  {
+    "Id": 17,
+    "CauseId": 5,
+    "Code": "0002",
+    "Text": "Underground contact",
+    "Description": "UG equipment damaged by a party working for Vector"
+  },
+  {
+    "Id": 18,
+    "CauseId": 5,
+    "Code": "0003",
+    "Text": "Above ground contact",
+    "Description": "Contact with above ground assets by a party working for Vector (including vehicle)"
+  },
+  {
+    "Id": 19,
+    "CauseId": 5,
+    "Code": "0004",
+    "Text": "Switching error",
+    "Description": "Where an error in the switching schedule/application results in an unplanned outage "
+  },
+  {
+    "Id": 20,
+    "CauseId": 5,
+    "Code": "0005",
+    "Text": "Planned shutdown",
+    "Description": "Customer not notified of shutdown"
+  },
+  {
+    "Id": 21,
+    "CauseId": 5,
+    "Code": "0006",
+    "Text": "Other",
+    "Description": "Damage caused by a party working for Vector which is not defined in the other sub-causes; description of cause is mandatory"
+  },
+  {
+    "Id": 22,
+    "CauseId": 6,
+    "Code": "0001",
+    "Text": "Grass/creeper",
+    "Description": "Where grass (excluding bamboo) or creeper has interfered with electrical equipment"
+  },
+  {
+    "Id": 23,
+    "CauseId": 6,
+    "Code": "0002",
+    "Text": "Tree contact",
+    "Description": "Trees grown into asset or lines, tree has made contact with the line"
+  },
+  {
+    "Id": 24,
+    "CauseId": 6,
+    "Code": "0003",
+    "Text": "Tree fallen",
+    "Description": "Tree down"
+  },
+  {
+    "Id": 25,
+    "CauseId": 6,
+    "Code": "0004",
+    "Text": "Vegetation debris",
+    "Description": "Loose debris has made contact with asset or lines"
+  },
+  {
+    "Id": 26,
+    "CauseId": 6,
+    "Code": "0005",
+    "Text": "Roots",
+    "Description": "Roots have caused damage to the underground asset"
+  },
+  {
+    "Id": 27,
+    "CauseId": 7,
+    "Code": "0001",
+    "Text": "Mechanical/structural",
+    "Description": "Instances where mechanical damage/deterioration has required a device's replacement e.g. loose connection, broken cross arm, vibration,  poor seals"
+  },
+  {
+    "Id": 28,
+    "CauseId": 7,
+    "Code": "0002",
+    "Text": "Electrical",
+    "Description": "Failure of a device's electrical properties. E.g. Deteriorated insulation, bad contacts, flashover"
+  },
+  {
+    "Id": 29,
+    "CauseId": 7,
+    "Code": "0003",
+    "Text": "Installation not to standard",
+    "Description": "Instances where installation irregularities have resulted in the asset not performing to standard. E.g. incorrect sag resulting in line clash, low lines, un-stayed pole leaning etc. May have met prevailing standards when installed."
+  },
+  {
+    "Id": 30,
+    "CauseId": 7,
+    "Code": "0004",
+    "Text": "Corrosion/rot",
+    "Description": "Equipment malfunctioned due to corrosion or rot"
+  },
+  {
+    "Id": 31,
+    "CauseId": 7,
+    "Code": "0005",
+    "Text": "Control system",
+    "Description": "Communications or control circuitry playing up"
+  },
+  {
+    "Id": 32,
+    "CauseId": 7,
+    "Code": "0006",
+    "Text": "Protection mal-operation",
+    "Description": "Where the protection system (including pilot lines) operates incorrectly"
+  },
+  {
+    "Id": 33,
+    "CauseId": 7,
+    "Code": "0007",
+    "Text": "Contamination",
+    "Description": "Failure of equipment due to contamination"
+  },
+  {
+    "Id": 34,
+    "CauseId": 7,
+    "Code": "0008",
+    "Text": "Other",
+    "Description": "Equipment defect that is not defined in the above defects"
+  },
+  {
+    "Id": 35,
+    "CauseId": 8,
+    "Code": "0001",
+    "Text": "Electrician Wiring",
+    "Description": "Select the most appropriate.  Where sub-cause is ‘Other – see comments’ an explanation must be provided in the activity comments"
+  },
+  {
+    "Id": 36,
+    "CauseId": 8,
+    "Code": "0002",
+    "Text": "Painting",
+    "Description": "Select the most appropriate.  Where sub-cause is ‘Other – see comments’ an explanation must be provided in the activity comments"
+  },
+  {
+    "Id": 37,
+    "CauseId": 8,
+    "Code": "0003",
+    "Text": "Tree Cutting",
+    "Description": "Select the most appropriate.  Where sub-cause is ‘Other – see comments’ an explanation must be provided in the activity comments"
+  },
+  {
+    "Id": 38,
+    "CauseId": 8,
+    "Code": "0004",
+    "Text": "Other",
+    "Description": "Select the most appropriate.  Where sub-cause is ‘Other – see comments’ an explanation must be provided in the activity comments"
+  }
+]
