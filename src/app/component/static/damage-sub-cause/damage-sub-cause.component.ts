@@ -45,9 +45,9 @@ export class DamageSubCauseComponent implements OnInit {
     //   this.subscription.unsubscribe();
     // }
 
+    var list = new Array<DamageSubCause>();
     this.service.getLoadedList().forEach(
       item => {
-        var list = new Array<DamageSubCause>();
         if(this.cause == undefined){
           list.push(item);
         } else {
@@ -55,10 +55,10 @@ export class DamageSubCauseComponent implements OnInit {
             list.push(item);
           }
         }
-        this.list.next(list);
-        this.item.next(list[0]);
     });
-  }
+    this.list.next(list);
+    this.item.next(list[0]);
+}
 
   onSelection(selected: DamageSubCause) {
     this.damageSubCause = selected;

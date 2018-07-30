@@ -17,6 +17,9 @@ export class DamageComponent implements OnInit {
   constructor(private service: DamageService) { 
     this.onSelected = new EventEmitter();
     this.list = service.getList();
+    this.list.subscribe(list => {
+      console.log(JSON.stringify(list));
+    });
   }
 
   ngOnInit() {
