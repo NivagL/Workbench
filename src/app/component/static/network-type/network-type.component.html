@@ -1,5 +1,7 @@
 <mat-form-field>
-  <mat-select placeholder="Network" [(value)]="item">
+  <mat-select placeholder="Network" 
+    (selectionChange)="onChange($event.value)" 
+    [(ngModel)]="item">
     <mat-option *ngFor="let item of list|async" [value]="item">
       {{item.Text}}
     </mat-option>

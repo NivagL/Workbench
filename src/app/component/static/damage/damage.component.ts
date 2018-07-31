@@ -10,24 +10,35 @@ import {DamageService} from '../../../service/damage.service'
   styleUrls: ['./damage.component.css']
 })
 export class DamageComponent implements OnInit {
-  @Input() damage: Damage;
-  @Output() onSelected: EventEmitter<Damage>;
+  @Input() Id: number;
+  @Output() onSelected: EventEmitter<number>;
+
   public list: Observable<Array<Damage>>;
+  public item: Damage;
 
   constructor(private service: DamageService) { 
-    this.onSelected = new EventEmitter();
     this.list = service.getList();
-    this.list.subscribe(list => {
-      console.log(JSON.stringify(list));
-    });
+    this.onSelected = new EventEmitter();
   }
 
   ngOnInit() {
+    //get the item from the list based on the input
+    this.list.subscribe(list => {
+      list.forEach(item => {
+        if(item.Id == this.Id) {
+          this.item = item;
+          return;
+        }
+      }); 
+      if(this.Id == undefined) {
+        this.Id = list[0].Id;
+      }
+    });
   }
 
-  onSelection(selected: Damage) {
-    this.damage = selected;
-    this.onSelected.emit(selected);
+  onChange(selected: Damage) {
+    this.item = selected;
+    this.onSelected.emit(this.item.Id);
   }
 
 }

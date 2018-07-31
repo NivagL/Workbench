@@ -1,9 +1,48 @@
 <div class="container">
+    <!-- <div class="column">
+        <table>
+        <tr>
+            Id
+            WorkTypeId
+            ClientId
+            TypeTypeId
+            TypeCategoryId
+            Status
+            NetworkId
+            MessageId
+            Description
+            Identified
+            Started
+            Completed
+            Engineer
+            EngineerResponse
+            AssetId
+            Address
+            ICP
+            Summary
+            DamageId
+            CauseId
+            SubCauseId
+        </tr>    
+        </table>
+    </div> -->
+
     <div class="column">
         <br/>
-        <app-network-type></app-network-type>
-        <app-asset-type></app-asset-type>
-        <app-asset-sub-type></app-asset-sub-type>
+        <app-network-type
+            [Id]="assetFault.NetworkId"
+            (onSelected)="onNetworkType($event)"
+        ></app-network-type>
+        
+        <app-asset-type
+            [Id]="assetFault.AssetTypeId"
+            (onSelected)="onAssetType($event)"
+        ></app-asset-type>
+
+        <app-asset-sub-type
+            [Id]="assetFault.AssetSubTypeId"
+            (onSelected)="onAssetSubType($event)"
+        ></app-asset-sub-type>
 
         <br/>
         <mat-form-field class="block" appearance="fill">
@@ -30,6 +69,7 @@
         <br/>
         <div class="block">
             <app-damage
+                [Id]="assetFault.DamageId"
                 (onSelected)="onDamage($event)"
             ></app-damage>
         </div>
