@@ -42,6 +42,7 @@
         <app-asset-sub-type
             [Id]="assetFault.AssetSubTypeId"
             (onSelected)="onAssetSubType($event)"
+            [AssetType]="assetFault.AssetTypeId"
         ></app-asset-sub-type>
 
         <br/>
@@ -74,11 +75,13 @@
             ></app-damage>
         </div>
         <app-damage-cause
+            [Id]="assetFault.CauseId"
             (onSelected)="onCause($event)"
         ></app-damage-cause>
         <app-damage-sub-cause
+            [Id]="assetFault.SubCauseId"
             (onSelected)="onSubCause($event)"
-            [cause]="cause"
+            [CauseId]="assetFault.CauseId"
         ></app-damage-sub-cause>
 
         <br/>

@@ -26,42 +26,44 @@ export class RmWorkQaDetailComponent implements OnInit {
   
   constructor() { 
     this.assetFault = new AssetFault();
-    this.assetFault.NetworkId = 1;
+    this.assetFault.NetworkId = 2;
     this.assetFault.AssetTypeId = 1;
     this.assetFault.AssetSubTypeId = 1;
     this.assetFault.DamageId = 1;
+    this.assetFault.CauseId = 1;
+    this.assetFault.SubCauseId = 1;
   }
 
   ngOnInit() {
   }
 
-  onNetworkType(Id) {
+  onNetworkType(Id: number) {
     console.log('setting network id:' + Id);
     this.assetFault.NetworkId = Id;
   }
 
-  onAssetType(Id) {
+  onAssetType(Id: number) {
     console.log('setting asset type id:' + Id);
     this.assetFault.AssetTypeId = Id;
   }
   
-  onAssetSubType(Id) {
+  onAssetSubType(Id: number) {
     console.log('setting asset sub type id:' + Id);
     this.assetFault.AssetSubTypeId = Id;
   }
   
-  onDamage(Id) {
+  onDamage(Id: number) {
     console.log('setting damage id:' + Id);
     this.assetFault.DamageId = Id;
   }
 
-  public cause: DamageCause;
-  onCause(event) {
-    this.cause = event;
+  onCause(Id: number) {
+    console.log('setting cause id:' + Id);
+    this.assetFault.CauseId = Id;
   }
 
-  public subcause: DamageSubCause;
-  onSubCause(event) {
-    this.cause = event;
+  onSubCause(Id: number) {
+    console.log('setting sub cause id:' + Id);
+    this.assetFault.SubCauseId = Id;
   }
 }

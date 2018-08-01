@@ -11,16 +11,16 @@ import {DamageSubCauseService} from '../../../service/damage-sub-cause.service'
   styleUrls: ['./damage-sub-cause.component.css']
 })
 export class DamageSubCauseComponent implements OnInit {
-  @Input() damageSubCause: DamageSubCause;
-  @Output() onSelected: EventEmitter<DamageSubCause>;
+  @Input() Id: number;
+  @Output() onSelected: EventEmitter<number>;
   
-  private _cause: DamageCause;
-  @Input() set cause(data: DamageCause) {
-    this._cause = data;
+  private _CauseId: number;
+  @Input() set CauseId(data: number) {
+    this._CauseId = data;
     this.getList();
   }
-  get cause(): DamageCause {
-    return this._cause;
+  get CauseId(): number {
+    return this._CauseId;
   }
 
   public list: BehaviorSubject<Array<DamageSubCause>>;
@@ -28,8 +28,10 @@ export class DamageSubCauseComponent implements OnInit {
 
   constructor(private service: DamageSubCauseService) { 
     this.onSelected = new EventEmitter();
+
     let list = new Array<DamageSubCause>();
     this.list = new BehaviorSubject<Array<DamageSubCause>>(list);
+  
     let item = new DamageSubCause();
     this.item = new BehaviorSubject<DamageSubCause>(item);
   }
@@ -48,20 +50,20 @@ export class DamageSubCauseComponent implements OnInit {
     var list = new Array<DamageSubCause>();
     this.service.getLoadedList().forEach(
       item => {
-        if(this.cause == undefined){
+        if(this.CauseId == undefined){
           list.push(item);
         } else {
-          if(item.CauseId == this.cause.Id) {
+          if(item.CauseId == this.CauseId) {
             list.push(item);
           }
         }
     });
     this.list.next(list);
     this.item.next(list[0]);
-}
+  }
 
   onSelection(selected: DamageSubCause) {
-    this.damageSubCause = selected;
-    this.onSelected.emit(selected);
+    this.item.next(selected);
+    this.onSelected.emit(selected.Id);
   }
 }

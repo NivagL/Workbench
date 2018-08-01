@@ -1,5 +1,5 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import {Observable} from 'rxjs';
+import {Observable, BehaviorSubject} from 'rxjs';
 
 import {AssetSubType} from '../../../model/asset-sub-type'
 import {AssetSubTypeService} from '../../../service/asset-sub-type.service'
@@ -13,32 +13,57 @@ export class AssetSubTypeComponent implements OnInit {
   @Input() Id: number;
   @Output() onSelected: EventEmitter<number>;
 
-  public list: Observable<Array<AssetSubType>>;
-  public item: AssetSubType;
+  private _AssetType: number;
+  @Input() set AssetType(data: number) {
+    this._AssetType = data;
+    this.getList();
+  }
+  get AssetType(): number {
+    return this._AssetType;
+  }
+
+  public list: BehaviorSubject<Array<AssetSubType>>;
+  public item: BehaviorSubject<AssetSubType>;
 
   constructor(private service: AssetSubTypeService) { 
-    this.list = service.getList();
     this.onSelected = new EventEmitter();
+
+    let list = new Array<AssetSubType>();
+    this.list = new BehaviorSubject<Array<AssetSubType>>(list);
+  
+    let item = new AssetSubType();
+    this.item = new BehaviorSubject<AssetSubType>(item);
   }
 
-  ngOnInit() {
-    //get the item from the list based on the input
-    this.list.subscribe(list => {
-      list.forEach(item => {
-        if(item.Id == this.Id) {
-          this.item = item;
-          return;
+  ngOnInit() { 
+    this.getList();
+  }
+
+  private subscription: any;
+  getList() {
+    //TODO **GL**
+    // if(this.subscription != undefined) {
+    //   this.subscription.unsubscribe();
+    // }
+
+    var list = new Array<AssetSubType>();
+    this.service.getLoadedList().forEach(
+      item => {
+        if(this.AssetType == undefined){
+          list.push(item);
+        } else {
+          if(item.AssetType == this.AssetType) {
+            list.push(item);
+          }
         }
-      }); 
-      if(this.Id == undefined) {
-        this.Id = list[0].Id;
-      }
     });
+    this.list.next(list);
+    this.item.next(list[0]);
   }
-
+  
   onChange(selected: AssetSubType) {
-    this.item = selected;
-    this.onSelected.emit(this.item.Id);
+    this.item.next(selected);
+    this.onSelected.emit(selected.Id);
   }
 
 }
