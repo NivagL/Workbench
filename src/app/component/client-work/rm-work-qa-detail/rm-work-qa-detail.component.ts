@@ -32,6 +32,8 @@ export class RmWorkQaDetailComponent implements OnInit {
     this.assetFault.DamageId = 1;
     this.assetFault.CauseId = 1;
     this.assetFault.SubCauseId = 1;
+    this.assetFault.TaskCategoryId = 1;
+    this.assetFault.TaskTypeId = 1;
   }
 
   ngOnInit() {
@@ -65,5 +67,15 @@ export class RmWorkQaDetailComponent implements OnInit {
   onSubCause(Id: number) {
     console.log('setting sub cause id:' + Id);
     this.assetFault.SubCauseId = Id;
+  }
+
+  onTaskCategory(Id: number) {
+    console.log('setting task category id:' + Id);
+    this.assetFault.TaskCategoryId = Id;
+  }
+
+  onTaskType(Id: number) {
+    console.log('setting task type id:' + Id);
+    this.assetFault.TaskTypeId = Id;
   }
 }

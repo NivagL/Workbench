@@ -58,11 +58,11 @@ export class AssetSubTypeComponent implements OnInit {
         }
     });
     this.list.next(list);
-    this.item.next(list[0]);
+    //this.item.next(list[0]);
   }
   
   onChange(selected: AssetSubType) {
-    this.item.next(selected);
+    //this.item.next(selected);
     this.onSelected.emit(selected.Id);
   }
 

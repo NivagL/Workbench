@@ -47,11 +47,12 @@ export class DataService<T> {
     }
     else {
       let url: string = this.config.getConfiguration('dataUrl');
-      let dataUrl: string = url + "api\\" + this.name;
+      let dataUrl: string = url + "api/" + this.name;
+
       this.http.get(dataUrl).subscribe(
         (data: T[]) => {
             this.loaded_list = data;
-            // console.log('ListService.getInputData event: ' + this.name);
+            
             this.loaded_list.sort();
             this.list.next(this.loaded_list);
             this.item.next(this.loaded_list[0]);

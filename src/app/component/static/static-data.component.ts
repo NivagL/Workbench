@@ -1,22 +1,17 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {Observable} from 'rxjs';
 
-import {TaskCategory} from '../../../model/task-category'
-import {TaskCategoryService} from '../../../service/task-category.service'
+import { Id } from './../../model/Id'
+import { DataService } from './../../service/data.service'
 
-@Component({
-  selector: 'app-task-category',
-  templateUrl: './task-category.component.html',
-  styleUrls: ['./task-category.component.css']
-})
-export class TaskCategoryComponent implements OnInit {
+export class StaticDataComponent<TModel extends Id, TModelService extends DataService<TModel>> implements OnInit {
   @Input() Id: number;
   @Output() onSelected: EventEmitter<number>;
 
-  public list: Observable<Array<TaskCategory>>;
-  public item: TaskCategory;
+  public list: Observable<Array<TModel>>;
+  public item: TModel;
 
-  constructor(private service: TaskCategoryService) { 
+  constructor(private service: TModelService) { 
     this.onSelected = new EventEmitter();
   }
 
@@ -36,7 +31,7 @@ export class TaskCategoryComponent implements OnInit {
     });
   }
 
-  onChange(selected: TaskCategory) {
+  onChange(selected: TModel) {
     this.item = selected;
     this.onSelected.emit(this.item.Id);
   }

@@ -1,6 +1,7 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {Observable} from 'rxjs';
 
+import {StaticDataComponent} from './../static-data.component'
 import {NetworkType} from '../../../model/network-type'
 import {NetworkTypeService} from '../../../service/network-type.service'
 
@@ -9,7 +10,9 @@ import {NetworkTypeService} from '../../../service/network-type.service'
   templateUrl: './network-type.component.html',
   styleUrls: ['./network-type.component.css']
 })
-export class NetworkTypeComponent implements OnInit {
+export class NetworkTypeComponent //extends StaticDataComponent<NetworkType, NetworkTypeService>
+  implements OnInit {
+
   @Input() Id: number;
   @Output() onSelected: EventEmitter<number>;
 

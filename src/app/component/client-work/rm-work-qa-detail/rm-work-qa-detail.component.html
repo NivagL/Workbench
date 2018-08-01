@@ -64,8 +64,15 @@
     </div>
     <div class="column">
         <br/>
-        <app-task-category></app-task-category>
-        <app-task-type></app-task-type>
+        <app-task-category
+            [Id]="assetFault.TaskCategoryId"
+            (onSelected)="onTaskCategory($event)"
+        ></app-task-category>
+        <app-task-type
+            [Id]="assetFault.TaskTypeId"
+            (onSelected)="onTaskType($event)"
+            [TaskCategoryId]="assetFault.TaskCategoryId"
+        ></app-task-type>
 
         <br/>
         <div class="block">
