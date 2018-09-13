@@ -82,6 +82,11 @@ import { TaskByDateComponent } from './component/client-work/charts/task-by-date
 import { TaskByClientComponent } from './component/client-work/charts/task-by-client/task-by-client.component';
 import { EmployeeByWorkTypeComponent } from './component/field-work/charts/employee-by-work-type/employee-by-work-type.component';
 import { FieldWorkComponent } from './component/field-work/field-work/field-work.component';
+<<<<<<< Updated upstream
+=======
+import { PromisePipeComponent } from './component/promise-pipe/promise-pipe.component';
+import { WorkorderComponent } from './component/workorder/workorder.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -116,6 +121,11 @@ import { FieldWorkComponent } from './component/field-work/field-work/field-work
     TaskByClientComponent,
     EmployeeByWorkTypeComponent,
     FieldWorkComponent,
+<<<<<<< Updated upstream
+=======
+    PromisePipeComponent,
+    WorkorderComponent,
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
