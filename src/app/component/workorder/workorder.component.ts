@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Workorder } from '../../model/workorder';
+import { WorkorderService } from '../../service/workorder.service';
 
-interface WorkorderJSON {
-  id: number,
-  title: string,
-};
 
 @Component({
   selector: 'app-workorder',
@@ -12,17 +10,22 @@ interface WorkorderJSON {
 })
 export class WorkorderComponent implements OnInit {
 
-  public work_orders: Array<WorkorderJSON>;
+  public work_orders: Array<Workorder>;
   public columnsToDisplay = ['workorderId', 'workorderTitle'];
 
 
-  constructor() { }
+  constructor(
+    public workorderService: WorkorderService,
+  ) {
+    
+  }
 
   ngOnInit() {
-    this.work_orders = [
-      { id: 1, title: 'First', },
-      { id: 2, title: 'Second', },
-    ];
+
+    this.workorderService.getWorkOrders().subscribe(
+      (array_of_work_orders) => { this.work_orders = array_of_work_orders; }
+    );
+
   }
 
 }
