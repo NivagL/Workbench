@@ -22,7 +22,10 @@ export class WorkorderComponent implements OnInit {
 
   ngOnInit() {
 
-    this.workorderService.getWorkOrders().subscribe(
+    // this.workorderService.getWorkorders().subscribe(
+    //   (array_of_work_orders) => { this.work_orders = array_of_work_orders; }
+    // );
+    this.workorderService.getMappedJSONWorkorders().subscribe(
       (array_of_work_orders) => { this.work_orders = array_of_work_orders; }
     );
 
