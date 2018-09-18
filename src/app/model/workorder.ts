@@ -6,4 +6,5 @@
 export class Workorder {
     Id: number;
     Title: string;
+    Index: number;
 }

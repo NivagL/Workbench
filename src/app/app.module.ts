@@ -83,6 +83,7 @@ import { TaskByClientComponent } from './component/client-work/charts/task-by-cl
 import { EmployeeByWorkTypeComponent } from './component/field-work/charts/employee-by-work-type/employee-by-work-type.component';
 import { FieldWorkComponent } from './component/field-work/field-work/field-work.component';
 import { WorkorderComponent } from './component/workorder/workorder.component';
+import { WorkorderDetailComponent } from './component/workorder/workorder-detail/workorder-detail.component';
 
 @NgModule({
   declarations: [
@@ -118,6 +119,7 @@ import { WorkorderComponent } from './component/workorder/workorder.component';
     EmployeeByWorkTypeComponent,
     FieldWorkComponent,
     WorkorderComponent,
+    WorkorderDetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Workorder } from '../../model/workorder';
 import { WorkorderService } from '../../service/workorder.service';
+import { WorkorderDetailComponent } from 'workorder-detail/workorder-detail';
 
 
 @Component({
@@ -10,8 +11,8 @@ import { WorkorderService } from '../../service/workorder.service';
 })
 export class WorkorderComponent implements OnInit {
 
-  public work_orders: Array<Workorder>;
-  public columnsToDisplay = ['workorderId', 'workorderTitle'];
+  public workorders: Array<Workorder>;
+  public columnsToDisplay = ['workorderId', 'workorderTitle', 'workorderIndex'];
 
 
   constructor(
@@ -20,13 +21,17 @@ export class WorkorderComponent implements OnInit {
     
   }
 
+  onClickRow() {
+    console.log('WorkorderComponent onClickRow');
+  }
+  
   ngOnInit() {
 
     // this.workorderService.getWorkorders().subscribe(
-    //   (array_of_work_orders) => { this.work_orders = array_of_work_orders; }
+    //   (array_of_workorders) => { this.workorders = array_of_workorders; }
     // );
     this.workorderService.getMappedJSONWorkorders().subscribe(
-      (array_of_work_orders) => { this.work_orders = array_of_work_orders; }
+      (array_of_workorders) => { this.workorders = array_of_workorders; }
     );
 
   }
