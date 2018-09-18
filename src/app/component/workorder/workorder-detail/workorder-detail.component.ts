@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Workorder } from '../../model/workorder';
+import { Workorder } from '../../../model/workorder';
 import { WorkorderService } from '../../../service/workorder.service';
 
 @Component({

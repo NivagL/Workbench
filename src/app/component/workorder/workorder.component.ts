@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Workorder } from '../../model/workorder';
 import { WorkorderService } from '../../service/workorder.service';
-import { WorkorderDetailComponent } from 'workorder-detail/workorder-detail';
+import { WorkorderDetailComponent } from './workorder-detail/workorder-detail.component';
 
 
 @Component({

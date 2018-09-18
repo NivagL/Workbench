@@ -19,9 +19,10 @@ export class WorkorderService {
   // private dataWorkorders: Array<Workorder> = [
   //   { Id: 111, Title: 'First First First', },
   //   { Id: 222, Title: 'Second Second Second', },
-  ];
+  // ];
 
-  private dataWorkordersJSON: WorkorderJSON[] = null;
+  // private dataWorkordersJSON: WorkorderJSON[] = null;
+  private mappedWorkOrders: Observable<Workorder[]> = null;
 
   private workorderUrl:string = 'https://vector-planned-dv1-northpowerb2b.azurewebsites.net/api/workorder';
 
@@ -61,24 +62,24 @@ export class WorkorderService {
   //   return of( this.dataWorkorders );
   // }
 
-  private getWorkorderByJSON(the_url: string) {
-    this.httpClient.get<Array<WorkorderJSON>>(the_url).subscribe(
-      (data) => {
-        console.log(data);
-        let mappedData = data.map((d, i) => ({Id: +d.orderData.header.orderNumber, Title: d.return.message, Index: i}));
-        console.log(mappedData);
-        // this.dataWorkordersJSON = mappedData;
-        // this.dataWorkordersJSON = this.dataWorkorders;
-      });
-    // return this.dataWorkorders;
-  }
+  // private getWorkorderByJSON(the_url: string) {
+  //   this.httpClient.get<Array<WorkorderJSON>>(the_url).subscribe(
+  //     (data) => {
+  //       console.log(data);
+  //       let mappedData = data.map((d, i) => ({Id: +d.orderData.header.orderNumber, Title: d.return.message, Index: i}));
+  //       console.log(mappedData);
+  //       // this.dataWorkordersJSON = mappedData;
+  //       // this.dataWorkordersJSON = this.dataWorkorders;
+  //     });
+  //   // return this.dataWorkorders;
+  // }
 
   public getMappedJSONWorkorders(): Observable<Workorder[]> {
     const httpOptions = {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
     };
-    if (!this.dataWorkordersJSON) {
-      this.dataWorkordersJSON = this.httpClient
+    if (!this.mappedWorkOrders) {
+      this.mappedWorkOrders = this.httpClient
         .get<WorkorderJSON[]>(this.workorderUrl, httpOptions)
         .pipe(
           map( (data) => {
@@ -92,7 +93,7 @@ export class WorkorderService {
           })
         );
     }
-    return this.dataWorkordersJSON;
+    return this.mappedWorkOrders;
   }
 
 }
