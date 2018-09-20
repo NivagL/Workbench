@@ -3,3 +3,12 @@
 </p>
 
 <p>index is {{index}}</p>
+<p>title is {{title}}</p>
+
+<mat-form-field>
+  <input matInput [(ngModel)]="title" placeholder="Edit title here">
+</mat-form-field>
+
+<hr>
+
+<button mat-fab color='red' (click)="updateTitle()">Update Title</button>

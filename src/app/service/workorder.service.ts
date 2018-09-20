@@ -16,12 +16,6 @@ interface WorkorderJSON {
 
 export class WorkorderService {
 
-  // private dataWorkorders: Array<Workorder> = [
-  //   { Id: 111, Title: 'First First First', },
-  //   { Id: 222, Title: 'Second Second Second', },
-  // ];
-
-  // private dataWorkordersJSON: WorkorderJSON[] = null;
   private mappedWorkOrders: Observable<Workorder[]> = null;
 
   private workorderUrl:string = 'https://vector-planned-dv1-northpowerb2b.azurewebsites.net/api/workorder';
@@ -29,6 +23,28 @@ export class WorkorderService {
   constructor(
   public httpClient: HttpClient,
   ) { }
+
+  public getMappedJSONWorkorders(): Observable<Workorder[]> {
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+    };
+    if (!this.mappedWorkOrders) {
+      this.mappedWorkOrders = this.httpClient
+        .get<WorkorderJSON[]>(this.workorderUrl, httpOptions)
+        .pipe(
+          map( (data) => {
+            console.log('getMappedJSONWorkorders data', data);
+            console.log(data);
+            let mappedData = data.map(
+              (d, i) => ({Id: d.return.id, Title: d.return.message, Index: i})
+            );
+            console.log('getMappedJSONWorkorders mappedData', mappedData);
+            return mappedData;
+          })
+        );
+    }
+    return this.mappedWorkOrders;
+  }
 
   // public getWorkorders(): Observable<Array<Workorder>> {
   //   console.log('getWorkorders');
@@ -73,27 +89,4 @@ export class WorkorderService {
   //     });
   //   // return this.dataWorkorders;
   // }
-
-  public getMappedJSONWorkorders(): Observable<Workorder[]> {
-    const httpOptions = {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-    };
-    if (!this.mappedWorkOrders) {
-      this.mappedWorkOrders = this.httpClient
-        .get<WorkorderJSON[]>(this.workorderUrl, httpOptions)
-        .pipe(
-          map( (data) => {
-            console.log('getMappedJSONWorkorders data', data);
-            console.log(data);
-            let mappedData = data.map(
-              (d, i) => ({Id: d.return.id, Title: d.return.message, Index: i})
-            );
-            console.log('getMappedJSONWorkorders mappedData', mappedData);
-            return mappedData;
-          })
-        );
-    }
-    return this.mappedWorkOrders;
-  }
-
 }

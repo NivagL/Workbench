@@ -1,7 +1,3 @@
-<p>
-  workorder works!
-</p>
-
 <table mat-table [dataSource]="workorders">
 
   <ng-container matColumnDef="workorderId">
@@ -22,4 +18,4 @@
 </table>
 
 
-<app-workorder-detail [index]="selectedIndex"></app-workorder-detail>
+<app-workorder-detail *ngIf="selectedIndex" [index]="selectedIndex" [title]="selectedWorkorder.Title" (titleChange)="onTitleChange($event)"></app-workorder-detail>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Workorder } from '../../../model/workorder';
 import { WorkorderService } from '../../../service/workorder.service';
 
@@ -10,6 +10,8 @@ import { WorkorderService } from '../../../service/workorder.service';
 export class WorkorderDetailComponent implements OnInit {
 
   @Input() index: number; // index of the Workorder whose detail we display
+  @Input() title: string; 
+  @Output() titleChange = new EventEmitter();
   public workorder: Workorder;
 
   constructor(
@@ -17,6 +19,14 @@ export class WorkorderDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log('WorkorderDetailComponent ngOnInit');
+    console.log('index: ', this.index);
+    console.log('title: ', this.title);
   }
 
+  updateTitle() {
+    console.log('updateTitle() called');
+    this.titleChange.emit(this.title);
+
+  }
 }

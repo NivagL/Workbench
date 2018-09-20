@@ -14,6 +14,8 @@ export class WorkorderComponent implements OnInit {
   public workorders: Array<Workorder>;
   public columnsToDisplay = ['workorderId', 'workorderTitle', 'workorderIndex'];
 
+  private selectedIndex: number;
+  private selectedWorkorder: Workorder;
 
   constructor(
     public workorderService: WorkorderService,
@@ -21,8 +23,10 @@ export class WorkorderComponent implements OnInit {
     
   }
 
-  onClickRow() {
-    console.log('WorkorderComponent onClickRow');
+  onClickRow(row) {
+    console.log('WorkorderComponent onClickRow', row);
+    this.selectedIndex = row.Index;
+    this.selectedWorkorder = this.workorders[row.Index];
   }
   
   ngOnInit() {
@@ -34,6 +38,12 @@ export class WorkorderComponent implements OnInit {
       (array_of_workorders) => { this.workorders = array_of_workorders; }
     );
 
+  }
+
+  onTitleChange(newTitle) {
+    console.log('on .. title ... change', newTitle);
+    // this.workorders[this.selectedIndex].Title = newTitle;
+    this.selectedWorkorder.Title = newTitle;
   }
 
 }
