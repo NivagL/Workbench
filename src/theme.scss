@@ -1,24 +1,57 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
-/*@import 'app/component/workorder/workorder-detail/workorder-detail.component.scss';*/
+// @import 'app/component/workorder/workorder-detail/workorder-detail.component.scss';
 
-$my-app-primary: mat-palette($mat-red);
+// See: http://mcg.mbitson.com
+// For use in src/lib/core/theming/_palette.scss
+$northpower-orange: (
+    50 : #fbeae4,
+    100 : #f6cbbc,
+    200 : #f0a98f,
+    300 : #e98662,
+    400 : #e56c41,
+    500 : #e0521f,
+    600 : #dc4b1b,
+    700 : #d84117,
+    800 : #d33812,
+    900 : #cb280a,
+    A100 : #fff7f6,
+    A200 : #ffcac3,
+    A400 : #ff9d90,
+    A700 : #ff8676,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+$my-app-primary: mat-palette($northpower-orange);
 $my-app-accent: mat-palette($mat-light-green);
 $my-app-warn: mat-palette($mat-yellow);
 
 $workbench-light-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 $workbench-dark-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
-/*@mixin custom-components-theme($theme) {
-  @include workorder-detail-theme($theme);
-}
-*/.workbench-light-theme {
-	@include angular-material-theme($workbench-light-theme);
-	/*@include custom-components-theme($workbench-light-theme);*/
-}
-.workbench-dark-theme {
-	@include angular-material-theme($workbench-dark-theme);
-	/*@include custom-components-theme($workbench-dark-theme);*/
-}
+// @mixin custom-components-theme($theme) {
+//   @include workorder-detail-theme($theme);
+// } 
+
+@include angular-material-theme($workbench-light-theme);
+
+// @include custom-components-theme($workbench-light-theme);
+
 
