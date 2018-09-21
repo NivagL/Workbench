@@ -46,4 +46,12 @@ export class WorkorderComponent implements OnInit {
     this.selectedWorkorder.Title = newTitle;
   }
 
+  rowClass(row) {
+    let rowClasses = [];
+    console.log('rowClass()', row);
+    if (row.Index == this.selectedIndex) {
+      rowClasses.push('selected');
+    }
+    return rowClasses;
+  }
 }

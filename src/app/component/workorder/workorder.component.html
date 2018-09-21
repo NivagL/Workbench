@@ -14,8 +14,8 @@
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-  <tr mat-row *matRowDef="let row; columns: columnsToDisplay" (click)="onClickRow(row)"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnsToDisplay" (click)="onClickRow(row)" [ngClass]="rowClass(row)"></tr>
 </table>
 
 
-<app-workorder-detail *ngIf="selectedIndex" [index]="selectedIndex" [title]="selectedWorkorder.Title" (titleChange)="onTitleChange($event)"></app-workorder-detail>
+<app-workorder-detail *ngIf="selectedIndex != null" [index]="selectedIndex" [title]="selectedWorkorder.Title" (titleChange)="onTitleChange($event)"></app-workorder-detail>

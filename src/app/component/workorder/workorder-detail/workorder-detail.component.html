@@ -1,14 +1,10 @@
-<p>
-  workorder-detail works!
-</p>
 
-<p>index is {{index}}</p>
-<p>title is {{title}}</p>
+<div class="workorder-detail">
+  <h2>Edit Selected Title</h2>
+  <mat-form-field>
+    <input matInput [(ngModel)]="title" placeholder="Edit title here">
+  </mat-form-field>
 
-<mat-form-field>
-  <input matInput [(ngModel)]="title" placeholder="Edit title here">
-</mat-form-field>
-
-<hr>
-
-<button mat-fab color='red' (click)="updateTitle()">Update Title</button>
+  <button mat-stroked-button (click)="updateTitle()">Update Title</button>
+  <p>Selected Index: {{index}}</p>
+</div>

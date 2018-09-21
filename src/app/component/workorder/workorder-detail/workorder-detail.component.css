@@ -1,0 +1,17 @@
+:host {
+	display: block;
+	border: 1px dotted yellow;
+	max-width: 40%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.workorder-detail {
+	padding: 15px;
+	margin: 10px;
+	border: 2px dashed gray;
+	border-radius: 15px;
+	background: white;
+}
