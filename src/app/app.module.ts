@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 // import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing-module';
@@ -126,6 +127,7 @@ import { WorkorderDetailComponent } from './component/workorder/workorder-detail
     BrowserAnimationsModule,
     HttpClientModule,
     HttpModule,
+    FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
     // RouterModule,

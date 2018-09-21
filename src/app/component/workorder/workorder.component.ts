@@ -7,7 +7,7 @@ import { WorkorderDetailComponent } from './workorder-detail/workorder-detail.co
 @Component({
   selector: 'app-workorder',
   templateUrl: './workorder.component.html',
-  styleUrls: ['./workorder.component.css']
+  styleUrls: ['./workorder.component.scss']
 })
 export class WorkorderComponent implements OnInit {
 
