@@ -5,7 +5,7 @@ import { WorkorderService } from '../../../service/workorder.service';
 @Component({
   selector: 'app-workorder-detail',
   templateUrl: './workorder-detail.component.html',
-  styleUrls: ['./workorder-detail.component.css']
+  styleUrls: ['./workorder-detail.component.scss']
 })
 export class WorkorderDetailComponent implements OnInit {
 

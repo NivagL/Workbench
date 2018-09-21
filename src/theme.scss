@@ -1,11 +1,24 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
+/*@import 'app/component/workorder/workorder-detail/workorder-detail.component.scss';*/
 
 $my-app-primary: mat-palette($mat-red);
 $my-app-accent: mat-palette($mat-light-green);
 $my-app-warn: mat-palette($mat-yellow);
 
-$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+$workbench-light-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+$workbench-dark-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
-@include angular-material-theme($my-app-theme);
+/*@mixin custom-components-theme($theme) {
+  @include workorder-detail-theme($theme);
+}
+*/.workbench-light-theme {
+	@include angular-material-theme($workbench-light-theme);
+	/*@include custom-components-theme($workbench-light-theme);*/
+}
+.workbench-dark-theme {
+	@include angular-material-theme($workbench-dark-theme);
+	/*@include custom-components-theme($workbench-dark-theme);*/
+}
+
