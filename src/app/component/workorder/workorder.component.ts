@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Workorder } from '../../model/workorder';
 import { WorkorderService } from '../../service/workorder.service';
 import { WorkorderDetailComponent } from './workorder-detail/workorder-detail.component';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-workorder',
@@ -13,9 +13,11 @@ export class WorkorderComponent implements OnInit {
 
   public workorders: Array<Workorder>;
   public columnsToDisplay = ['workorderId', 'workorderTitle', 'workorderIndex'];
+  public workordersLoaded = false;
 
   private selectedIndex: number;
   private selectedWorkorder: Workorder;
+
 
   constructor(
     public workorderService: WorkorderService,
@@ -35,7 +37,10 @@ export class WorkorderComponent implements OnInit {
     //   (array_of_workorders) => { this.workorders = array_of_workorders; }
     // );
     this.workorderService.getMappedJSONWorkorders().subscribe(
-      (array_of_workorders) => { this.workorders = array_of_workorders; }
+      (array_of_workorders) => {
+        this.workorders = array_of_workorders;
+        this.workordersLoaded = true;
+      }
     );
 
   }
