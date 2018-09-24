@@ -16,10 +16,10 @@
 </div>
 
 
-<div gdAuto>
+<div gdAuto id="workorders-container">
   <div fxLayout="row" fxLayout.lt-sm="column">
     <div fxFlex>
-      <mat-spinner *ngIf="!workordersLoaded"></mat-spinner>
+      <mat-spinner [diameter]="50" *ngIf="!workordersLoaded"></mat-spinner>
 
       <table mat-table [dataSource]="workorders" *ngIf="workordersLoaded">
         <ng-container matColumnDef="workorderId">
