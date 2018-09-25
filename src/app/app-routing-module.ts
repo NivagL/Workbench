@@ -14,10 +14,10 @@ const routes: Routes = [
         path: '',
         component: WorkbenchComponent
     },
-    {
-        path: 'wb',
-        component: WorkbenchComponent
-    },
+    // {
+    //     path: 'wb',
+    //     component: WorkbenchComponent
+    // },
     {
         path: 'cw',
         component: ClientWorkComponent

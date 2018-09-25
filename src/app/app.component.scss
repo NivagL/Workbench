@@ -3,3 +3,7 @@ mat-toolbar {
     font-size: 28px;
     font-weight: 300;
 }
+
+.app-title {
+	flex: 1 1 auto;  // use remaning space
+}

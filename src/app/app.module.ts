@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import 'hammerjs';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -125,6 +126,7 @@ import { WorkorderDetailComponent } from './component/workorder/workorder-detail
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatTooltipModule,
     HttpClientModule,
     HttpModule,
     FlexLayoutModule,
