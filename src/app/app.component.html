@@ -28,10 +28,10 @@
     </svg>
     <span class="app-title">{{Title|async}}</span>
     <span class="toolbar-nav-=right">
-      <button mat-icon-button matTooltip="Work Orders">
+      <button mat-icon-button (click)="onWorkorderClick()" matTooltip="Work Orders">
           <i class="material-icons">workorder</i>
       </button>
-      <button mat-icon-button matTooltip="Client Monitor">
+      <button mat-icon-button (click)="onClientMonitorClick()" matTooltip="Client Monitor">
           <i class="material-icons">business</i>
       </button>
       <button mat-icon-button matTooltip="QA">
@@ -39,10 +39,10 @@
       </button>
     </span>
   </mat-toolbar-row>
-  <mat-toolbar-row>
+<!--   <mat-toolbar-row>
     Second Row
   </mat-toolbar-row>
-</mat-toolbar>
+ --></mat-toolbar>
 <mat-sidenav-container class="work-sidenav-container">
     <mat-sidenav #snav [mode]="'over'">
         <mat-nav-list>

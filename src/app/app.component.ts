@@ -1,4 +1,5 @@
-import { Component, OnInit, Tooltip } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import { Observable } from 'rxjs';
 import { Routes, Router } from '@angular/router';
 import { ToolbarService } from './service/toolbar.service'
@@ -19,4 +20,13 @@ export class AppComponent {
   onHome() {
     this.router.navigate(['']);
   }
+
+  onWorkorderClick() {
+    this.router.navigate(['/workorders']);
+  } 
+
+  onClientMonitorClick() {
+    this.router.navigate(['/cw']);
+  } 
+
 }

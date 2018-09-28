@@ -31,7 +31,7 @@ const routes: Routes = [
         component: RmWorkQaDetailComponent
     },
     {
-        path: 'workorder',
+        path: 'workorders',
         component: WorkorderComponent
     },
     { 
