@@ -87,6 +87,17 @@ import { FieldWorkComponent } from './component/field-work/field-work/field-work
 import { WorkorderComponent } from './component/workorder/workorder.component';
 import { WorkorderDetailComponent } from './component/workorder/workorder-detail/workorder-detail.component';
 
+// // configuring providers
+// import { Configuration, ConfigurationParameters } from './typescript-angular/configuration';
+// import { ApiModule } from './typescript-angular/api.module';
+
+// // export function apiConfigFactory (): Configuration => {
+// //   const params: ConfigurationParameters = {
+// //     // set configuration parameters here.
+// //   }
+// //   return new Configuration(params);
+// // }
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -165,6 +176,8 @@ import { WorkorderDetailComponent } from './component/workorder/workorder-detail
     MatProgressSpinnerModule,
     MatButtonToggleModule,
     MatButtonModule,
+    // // ApiModule.forRoot(apiConfigFactory),
+    // ApiModule,
   ],
   providers: [
     GoogleMapsAPIWrapper,

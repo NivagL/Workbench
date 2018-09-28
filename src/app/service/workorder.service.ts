@@ -36,7 +36,13 @@ export class WorkorderService {
             console.log('getMappedJSONWorkorders data', data);
             console.log(data);
             let mappedData = data.map(
-              (d, i) => ({Id: d.return.id, Title: d.return.message, Index: i})
+              (d, i) => {
+                let result = {Id: 0, Title: 'null', Index: 0}
+                if (d) {
+                  result = {Id: d.return.id, Title: d.return.message, Index: i}
+                }
+                return result;
+              }
             );
             console.log('getMappedJSONWorkorders mappedData', mappedData);
             return mappedData;
