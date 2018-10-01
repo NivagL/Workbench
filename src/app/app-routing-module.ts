@@ -7,7 +7,7 @@ import { ClientWorkComponent } from './component/client-work/client-work/client-
 import { RmWorkQaComponent } from './component/client-work/rm-work-qa/rm-work-qa.component';
 import { RmWorkQaDetailComponent } from './component/client-work/rm-work-qa-detail/rm-work-qa-detail.component';
 import { PageNotFoundComponent } from './component/not-found.component';
-import { WorkorderComponent } from './component/workorder/workorder.component';
+import { WorkOrderComponent } from './component/work-order/work-order.component';
 
 const routes: Routes = [
     {
@@ -32,7 +32,7 @@ const routes: Routes = [
     },
     {
         path: 'workorders',
-        component: WorkorderComponent
+        component: WorkOrderComponent
     },
     { 
         path: '**',

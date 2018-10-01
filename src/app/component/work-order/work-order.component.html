@@ -1,0 +1,51 @@
+<div gdAuto style="width: 100%">
+  <div fxLayout="row">
+    <div fxFlex="1 1 25">One One</div>
+    <div fxFlex="1 1 25">One Two</div>
+    <div fxFlex="2 2 300px">One Three</div>
+    <div fxFlex="1 1 25">One Four</div>
+  </div>
+</div>
+<div gdAuto>
+  <div fxLayout="row">
+    <div fxFlex>Two One</div>
+    <div fxFlex>Two Two</div>
+    <div fxFlex>Two Three</div>
+    <div fxFlex>Two Four</div>
+  </div>
+</div>
+
+
+<div gdAuto id="work-orders-container">
+  <div fxLayout="row" fxLayout.lt-sm="column">
+    <div fxFlex>
+      <mat-spinner [diameter]="50" *ngIf="!workOrdersLoaded"></mat-spinner>
+
+      <table mat-table [dataSource]="workOrders" *ngIf="workOrdersLoaded">
+        <ng-container matColumnDef="workOrderId">
+          <th mat-header-cell *matHeaderCellDef>id</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.id}} </td>
+        </ng-container>
+        <ng-container matColumnDef="workOrderDescription">
+          <th mat-header-cell *matHeaderCellDef>description</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.description}} </td>
+        </ng-container>
+        <ng-container matColumnDef="workOrderStatus">
+          <th mat-header-cell *matHeaderCellDef>status</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.status}} </td>
+        </ng-container>
+        <ng-container matColumnDef="workOrderClientId">
+          <th mat-header-cell *matHeaderCellDef>client id</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.clientId}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsToDisplay" (click)="onClickRow(row)" [ngClass]="rowClass(row)"></tr>
+      </table>
+    </div>
+
+    <div fxFlex>
+      <app-work-order-detail *ngIf="selectedIndex != null" [index]="selectedIndex" [title]="selectedWorkOrder.Title" (descriptionChange)="onDescriptionChange($event)"></app-work-order-detail>
+    </div>
+  </div>
+</div>

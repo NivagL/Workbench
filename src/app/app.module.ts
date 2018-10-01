@@ -84,8 +84,8 @@ import { TaskByDateComponent } from './component/client-work/charts/task-by-date
 import { TaskByClientComponent } from './component/client-work/charts/task-by-client/task-by-client.component';
 import { EmployeeByWorkTypeComponent } from './component/field-work/charts/employee-by-work-type/employee-by-work-type.component';
 import { FieldWorkComponent } from './component/field-work/field-work/field-work.component';
-import { WorkorderComponent } from './component/workorder/workorder.component';
-import { WorkorderDetailComponent } from './component/workorder/workorder-detail/workorder-detail.component';
+import { WorkOrderComponent } from './component/work-order/work-order.component';
+import { WorkOrderDetailComponent } from './component/work-order/work-order-detail/work-order-detail.component';
 
 // // configuring providers
 // import { Configuration, ConfigurationParameters } from './typescript-angular/configuration';
@@ -131,8 +131,8 @@ import { WorkorderDetailComponent } from './component/workorder/workorder-detail
     TaskByClientComponent,
     EmployeeByWorkTypeComponent,
     FieldWorkComponent,
-    WorkorderComponent,
-    WorkorderDetailComponent,
+    WorkOrderComponent,
+    WorkOrderDetailComponent,
   ],
   imports: [
     BrowserModule,

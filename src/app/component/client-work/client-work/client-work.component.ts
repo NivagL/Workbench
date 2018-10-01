@@ -52,7 +52,7 @@ export class ClientWorkComponent implements OnInit {
   onQAClick() {
     this.router.navigate(['/rmqa']);
   } 
-  onWorkorderClick() {
+  onWorkOrderClick() {
     this.router.navigate(['/workorders']);
   } 
 }

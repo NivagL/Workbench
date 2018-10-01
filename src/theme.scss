@@ -1,7 +1,7 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
-// @import 'app/component/workorder/workorder-detail/workorder-detail.component.scss';
+// @import 'app/component/work-order/work-order-detail/work-order-detail.component.scss';
 
 // See: http://mcg.mbitson.com
 // For use in src/lib/core/theming/_palette.scss
@@ -47,7 +47,7 @@ $workbench-light-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app
 $workbench-dark-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
 // @mixin custom-components-theme($theme) {
-//   @include workorder-detail-theme($theme);
+//   @include work-order-detail-theme($theme);
 // } 
 
 @include angular-material-theme($workbench-light-theme);
