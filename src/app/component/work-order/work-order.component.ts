@@ -13,6 +13,7 @@ export class WorkOrderComponent implements OnInit {
 
   public workOrders: Array<WorkOrder>;
   public columnsToDisplay = ['workOrderId', 'workOrderDescription', 'workOrderStatus', 'workOrderClientId'];
+  // public columnsToDisplay = ['id'];
   public workOrdersLoaded = false;
 
   private selectedIndex: number;
@@ -40,6 +41,12 @@ export class WorkOrderComponent implements OnInit {
       (array_of_workOrders) => {
         this.workOrders = array_of_workOrders;
         this.workOrdersLoaded = true;
+
+        if (array_of_workOrders.length > 0) {
+          console.log('First workorder', array_of_workOrders[0]);
+          console.log('typeof First workorder', typeof array_of_workOrders[0]);
+          console.log('First workorder getOwnPropertyNames', Object.getOwnPropertyNames(array_of_workOrders[0]));
+        }
       }
     );
 

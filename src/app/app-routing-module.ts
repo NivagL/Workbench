@@ -8,6 +8,7 @@ import { RmWorkQaComponent } from './component/client-work/rm-work-qa/rm-work-qa
 import { RmWorkQaDetailComponent } from './component/client-work/rm-work-qa-detail/rm-work-qa-detail.component';
 import { PageNotFoundComponent } from './component/not-found.component';
 import { WorkOrderComponent } from './component/work-order/work-order.component';
+import { StyleguideComponent } from './component/styleguide/styleguide.component';
 
 const routes: Routes = [
     {
@@ -33,6 +34,10 @@ const routes: Routes = [
     {
         path: 'workorders',
         component: WorkOrderComponent
+    },
+    {
+        path: 'styleguide',
+        component: StyleguideComponent
     },
     { 
         path: '**',

@@ -21,6 +21,10 @@ export class AppComponent {
     this.router.navigate(['']);
   }
 
+  onStyleGuide() {
+    this.router.navigate(['styleguide']);
+  }
+
   onWorkOrderClick() {
     this.router.navigate(['/workorders']);
   } 
