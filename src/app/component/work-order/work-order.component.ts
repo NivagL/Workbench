@@ -12,7 +12,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 export class WorkOrderComponent implements OnInit {
 
   public workOrders: Array<WorkOrder>;
-  public columnsToDisplay = ['workOrderId', 'workOrderDescription', 'workOrderStatus', 'workOrderClientId'];
+  public columnsToDisplay = ['id', 'clientId', 'workTypeId', 'clientRequestId', 'requested', 'received', 'status', 'statusChanged', 'description', 'scheduledStart', 'scheduledEnd', 'activities'];
   // public columnsToDisplay = ['id'];
   public workOrdersLoaded = false;
 
