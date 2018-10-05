@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
-import { WorkOrder, WorkOrderActivity } from 'northpower.planned.service/model/models';
+import { WorkOrder, WorkOrderActivity } from '@saille/northpower.planned.service/model/models';
 import { WorkOrderService } from '../../service/work-order.service';
 import { ToastrService } from 'ngx-toastr';
  

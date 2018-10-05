@@ -25,14 +25,14 @@
     "@angular/platform-browser-dynamic": "^6.1.8",
     "@angular/router": "^6.1.8",
     "@aspnet/signalr": "^1.0.2",
+    "@saille/northpower.planned.service": "0.0.19",
     "angular-route": "^1.7.2",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
     "material-design-icons": "^3.0.1",
+    "ngx-toastr": "9.1.0",
     "rxjs": "^6.3.2",
-    "zone.js": "^0.8.26",
-    "northpower.planned.service": "0.0.1",
-    "ngx-toastr": "9.1.0"
+    "zone.js": "^0.7.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.8.3",

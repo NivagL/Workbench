@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WorkOrder, WorkOrderActivity } from 'northpower.planned.service/model/models';
+import { WorkOrder, WorkOrderActivity } from '@saille/northpower.planned.service/model/models';
 import { Observable, BehaviorSubject, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap, filter } from 'rxjs/operators';
@@ -27,6 +27,7 @@ export class WorkOrderService {
   constructor(
   public httpClient: HttpClient,
   ) {
+  }
 
   public getJSONWorkOrders(): Observable<WorkOrder[]> {
     const httpOptions = {
