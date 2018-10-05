@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { ToastrModule } from 'ngx-toastr';
 
 // import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing-module';
@@ -145,6 +146,7 @@ import { WorkorderActivityComponent } from './component/workorder-activity/worko
     HttpClientModule,
     HttpModule,
     FlexLayoutModule,
+    ToastrModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     // RouterModule,

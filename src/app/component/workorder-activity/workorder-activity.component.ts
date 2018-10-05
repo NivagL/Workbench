@@ -3,7 +3,8 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { WorkOrder, WorkOrderActivity } from 'northpower.planned.service/model/models';
 import { WorkOrderService } from '../../service/work-order.service';
-
+import { ToastrService } from 'ngx-toastr';
+ 
 @Component({
   selector: 'app-workorder-activity',
   templateUrl: './workorder-activity.component.html',
@@ -24,6 +25,7 @@ export class WorkorderActivityComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private workOrderService: WorkOrderService,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit() {
@@ -36,7 +38,10 @@ export class WorkorderActivityComponent implements OnInit {
         console.log('WorkorderActivityComponent.ngOnInit subscribe data this.workOrder', this.workOrder);
         this.workOrderActivitiesLoaded = true;
       },
-      (error) => { console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe error', error);},
+      (error) => {
+        this.toastr.error(error.toString(), 'Activites Load Error');
+        console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe error', error);
+      },
       () =>{ console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe complete');} 
     );
   }

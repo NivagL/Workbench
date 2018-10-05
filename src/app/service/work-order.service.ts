@@ -133,7 +133,7 @@ export class WorkOrderService {
               observer.next(thisWorkOrder);
               observer.complete();
             } else {
-              observer.error(`${id} not found`);
+              observer.error(`work order ${id} not found`);
             }
           }
         );
@@ -147,7 +147,7 @@ export class WorkOrderService {
           observer.next(thisWorkOrder);
           observer.complete();
         } else {
-          observer.error(`${id} not found`);
+          observer.error(`work order ${id} not found`);
         }
       }
 

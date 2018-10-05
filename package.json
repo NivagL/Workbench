@@ -31,7 +31,8 @@
     "material-design-icons": "^3.0.1",
     "rxjs": "^6.3.2",
     "zone.js": "^0.8.26",
-    "northpower.planned.service": "0.0.1"
+    "northpower.planned.service": "0.0.1",
+    "ngx-toastr": "9.1.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.8.3",
