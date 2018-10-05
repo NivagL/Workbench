@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-// import { WorkOrder } from '../model/work-order';
 import { WorkOrder, WorkOrderActivity } from 'northpower.planned.service/model/models';
 import { Observable, BehaviorSubject, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -28,56 +27,6 @@ export class WorkOrderService {
   constructor(
   public httpClient: HttpClient,
   ) {
-    // let someWorkOrder = new WorkOrder();
-    // let emptyWorkOrder = {} as WorkOrder;
-    // this.mappedWorkOrder = new Observable<WorkOrder>(emptyWorkOrder);
-
-  }
-
-  // public getMappedJSONWorkOrders(): Observable<WorkOrder[]> {
-  //   const httpOptions = {
-  //     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-  //   };
-  //   console.log('getMappedJSONWorkOrders called');
-  //   if (!this.mappedWorkOrders) {
-  //     console.log('getMappedJSONWorkOrders getting mappedWorkOrders');
-  //     this.mappedWorkOrders = this.httpClient
-  //       .get<WorkOrder[]>(this.workOrderUrl, httpOptions)
-  //       .pipe(
-  //         map( (data) => {
-  //           console.log('getMappedJSONWorkOrders data', data);
-  //           console.log(data);
-  //           let mappedData = data.map(
-  //             (d, i) => {
-  //               let result: WorkOrder = {
-  //                 id: 'nought',
-  //                 clientId: i,
-  //                 workTypeId: i,
-  //                 clientRequestId: 'clientRequestId string',
-  //                 requested: new Date(),
-  //                 received: new Date(),
-  //                 status: i,
-  //                 statusChanged: new Date(),
-  //                 description: 'description string',
-  //                 scheduledStart: new Date(),
-  //                 scheduledEnd: new Date(),
-  //                 activities: [],
-  //               }
-
-  //               if (d) {
-  //                 result = d;
-  //               }
-  //               return result;
-  //             }
-  //           );
-  //           console.log('getMappedJSONWorkOrders mappedData', mappedData);
-  //           return mappedData;
-  //         })
-  //       );
-  //   }
-  //   console.log('getMappedJSONWorkOrders returns');
-  //   return this.mappedWorkOrders;
-  // }
 
   public getJSONWorkOrders(): Observable<WorkOrder[]> {
     const httpOptions = {
