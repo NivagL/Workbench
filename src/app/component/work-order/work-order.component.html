@@ -61,9 +61,11 @@
         </ng-container>
         <ng-container matColumnDef="activities">
           <th mat-header-cell *matHeaderCellDef>activities</th>
-          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.activities}} </td>
+          <td mat-cell *matCellDef="let this_workOrder"> 
+            <a [routerLink]="['/workorder-activities', this_workOrder.id]" *ngIf="this_workOrder.activities.length > 0">{{this_workOrder.activities.length}}&nbsp;Activites</a>
+          </td>
         </ng-container>
-        
+
         <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
         <tr mat-row *matRowDef="let row; columns: columnsToDisplay" (click)="onClickRow(row)" [ngClass]="rowClass(row)"></tr>
       </table>

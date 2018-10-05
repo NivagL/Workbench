@@ -87,6 +87,7 @@ import { FieldWorkComponent } from './component/field-work/field-work/field-work
 import { WorkOrderComponent } from './component/work-order/work-order.component';
 import { WorkOrderDetailComponent } from './component/work-order/work-order-detail/work-order-detail.component';
 import { StyleguideComponent } from './component/styleguide/styleguide.component';
+import { WorkorderActivityComponent } from './component/workorder-activity/workorder-activity.component';
 
 // // configuring providers
 // import { Configuration, ConfigurationParameters } from './typescript-angular/configuration';
@@ -135,6 +136,7 @@ import { StyleguideComponent } from './component/styleguide/styleguide.component
     WorkOrderComponent,
     WorkOrderDetailComponent,
     StyleguideComponent,
+    WorkorderActivityComponent,
   ],
   imports: [
     BrowserModule,

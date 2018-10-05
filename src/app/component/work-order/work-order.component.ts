@@ -16,37 +16,28 @@ export class WorkOrderComponent implements OnInit {
   // public columnsToDisplay = ['id'];
   public workOrdersLoaded = false;
 
-  private selectedIndex: number;
+  private selectedIndex: string; // Guid
   private selectedWorkOrder: WorkOrder;
 
 
   constructor(
-    public workOrderService: WorkOrderService,
+    private workOrderService: WorkOrderService,
   ) {
     
   }
 
   onClickRow(row) {
     console.log('WorkOrderComponent onClickRow', row);
-    this.selectedIndex = row.clientId; // Mick Temp WRONG!
-    this.selectedWorkOrder = this.workOrders[row.clientId];
+    this.selectedIndex = row.id; // Guid
+    this.selectedWorkOrder = this.workOrders.find(workorder => workorder.id == row.id);
   }
   
   ngOnInit() {
 
-    // this.workOrderService.getWorkOrders().subscribe(
-    //   (array_of_workOrders) => { this.workOrders = array_of_workOrders; }
-    // );
-    this.workOrderService.getMappedJSONWorkOrders().subscribe(
+    this.workOrderService.getJSONWorkOrders().subscribe(
       (array_of_workOrders) => {
         this.workOrders = array_of_workOrders;
         this.workOrdersLoaded = true;
-
-        if (array_of_workOrders.length > 0) {
-          console.log('First workorder', array_of_workOrders[0]);
-          console.log('typeof First workorder', typeof array_of_workOrders[0]);
-          console.log('First workorder getOwnPropertyNames', Object.getOwnPropertyNames(array_of_workOrders[0]));
-        }
       }
     );
 
@@ -61,9 +52,10 @@ export class WorkOrderComponent implements OnInit {
   rowClass(row) {
     let rowClasses = [];
     // console.log('rowClass()', row);
-    if (row.clientId == this.selectedIndex) {
+    if (row.id == this.selectedIndex) {
       rowClasses.push('selected');
     }
     return rowClasses;
   }
+
 }
