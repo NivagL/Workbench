@@ -41,6 +41,10 @@ export class WorkorderActivityComponent implements OnInit {
     );
   }
 
+  onClickRow(row) {
+    console.log('WorkorderActivityComponent onClickRow', row);
+  }
+
 
 
 }

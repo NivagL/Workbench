@@ -149,8 +149,6 @@ export class WorkOrderService {
         } else {
           observer.error(`${id} not found`);
         }
-        observer.next(this.jsonWorkOrders);
-        observer.complete();
       }
 
     });
