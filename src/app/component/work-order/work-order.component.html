@@ -7,14 +7,6 @@
 
       <table mat-table [dataSource]="workOrders" *ngIf="workOrdersLoaded">
 
-
-
-<!--         <ng-container *ngFor="let disCol of displayedColumns; let colIndex = index" matColumnDef="{{disCol}}">
-            <mat-header-cell *matHeaderCellDef>{{disCol}}</mat-header-cell>
-            <mat-cell *matCellDef="let element "> {{element[disCol]}}
-            </mat-cell>
-        </ng-container>
- -->
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef>id</th>
           <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.id}} </td>
