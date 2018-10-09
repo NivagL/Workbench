@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import { WorkOrder } from '../../../model/work-order';
-import { WorkOrderService } from '../../../service/work-order.service';
+// import { WorkOrder } from '@saille/northpower.planned.service/model/models';
+// import { WorkOrderService } from '../../../service/work-order.service';
+import { WorkOrderService, WorkOrder } from '@saille/northpower.planned.service';
 
 @Component({
   selector: 'app-work-order-detail',

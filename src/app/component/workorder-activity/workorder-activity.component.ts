@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
-import { WorkOrder, WorkOrderActivity } from '@saille/northpower.planned.service/model/models';
-import { WorkOrderService } from '../../service/work-order.service';
+// import {  } from '@saille/northpower.planned.service/model/models';
+// import { WorkOrderService } from '../../service/work-order.service';
+import { WorkOrder, WorkOrderActivity, WorkOrderService } from '@saille/northpower.planned.service';
+
 import { ToastrService } from 'ngx-toastr';
  
 @Component({
@@ -32,7 +34,22 @@ export class WorkorderActivityComponent implements OnInit {
     this.workOrderId = this.route.snapshot.paramMap.get('workOrderId');
     console.log('WorkorderActivityComponent.ngOnInit starting');
     console.log('WorkorderActivityComponent.ngOnInit this.workOrderId', this.workOrderId);
-    this.workOrderService.getMappedJSONWorkOrderById(this.workOrderId).subscribe(
+
+
+    // this.workOrderService.getMappedJSONWorkOrderById(this.workOrderId).subscribe( // Local service
+    //   (workOrder) => {
+    //     this.workOrder = workOrder;
+    //     console.log('WorkorderActivityComponent.ngOnInit subscribe data this.workOrder', this.workOrder);
+    //     this.workOrderActivitiesLoaded = true;
+    //   },
+    //   (error) => {
+    //     this.toastr.error(error.toString(), 'Activites Load Error');
+    //     console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe error', error);
+    //   },
+    //   () =>{ console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe complete');} 
+    // );
+
+    this.workOrderService.workOrderGet(this.workOrderId).subscribe(
       (workOrder) => {
         this.workOrder = workOrder;
         console.log('WorkorderActivityComponent.ngOnInit subscribe data this.workOrder', this.workOrder);
@@ -40,10 +57,12 @@ export class WorkorderActivityComponent implements OnInit {
       },
       (error) => {
         this.toastr.error(error.toString(), 'Activites Load Error');
-        console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe error', error);
+        console.log('WorkorderActivityComponent.ngOnInit workOrderGet subscribe error', error);
       },
-      () =>{ console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe complete');} 
+      () =>{ console.log('WorkorderActivityComponent.ngOnInit workOrderGet subscribe complete');} 
     );
+
+
   }
 
   onClickRow(row) {

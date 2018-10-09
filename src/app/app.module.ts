@@ -89,6 +89,8 @@ import { WorkOrderComponent } from './component/work-order/work-order.component'
 import { WorkOrderDetailComponent } from './component/work-order/work-order-detail/work-order-detail.component';
 import { StyleguideComponent } from './component/styleguide/styleguide.component';
 import { WorkorderActivityComponent } from './component/workorder-activity/workorder-activity.component';
+import { BASE_PATH } from '@saille/northpower.planned.service';
+
 
 // // configuring providers
 // import { Configuration, ConfigurationParameters } from './typescript-angular/configuration';
@@ -191,6 +193,7 @@ import { WorkorderActivityComponent } from './component/workorder-activity/worko
     DamageCauseService,
     PieChartService,
     DateService,
+    {provide: BASE_PATH, useValue: "https://planned-dv1.northpowerb2b.com"}
   ],
   bootstrap: [AppComponent]
 })

@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { WorkOrder } from '../../model/work-order';
-import { WorkOrderService } from '../../service/work-order.service';
+// import { WorkOrder } from '../../model/work-order';
+// import { WorkOrderService } from '../../service/work-order.service';
+import { WorkOrderService, WorkOrder } from '@saille/northpower.planned.service';
 import { WorkOrderDetailComponent } from './work-order-detail/work-order-detail.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
+
+ 
 @Component({
   selector: 'app-work-order',
   templateUrl: './work-order.component.html',
@@ -34,10 +37,19 @@ export class WorkOrderComponent implements OnInit {
   
   ngOnInit() {
 
-    this.workOrderService.getJSONWorkOrders().subscribe(
+
+    // this.workOrderService.getJSONWorkOrders().subscribe( // Local service definition
+    //   (array_of_workOrders) => {
+    //     this.workOrders = array_of_workOrders;
+    //     this.workOrdersLoaded = true;
+    //   }
+    // );
+
+    this.workOrderService.workOrderGetAll().subscribe(
       (array_of_workOrders) => {
         this.workOrders = array_of_workOrders;
         this.workOrdersLoaded = true;
+        console.log('WorkOrderComponent.ngOnInit() loaded workorders into this.workOrders', this.workOrders);
       }
     );
 
