@@ -1,4 +1,5 @@
 <mat-toolbar color="primary">
+  <mat-toolbar-row>
     <button mat-icon-button (click)="snav.toggle()">
         <i class="material-icons">menu</i>
     </button>
@@ -25,34 +26,54 @@
             <rect id="Rectangle-path" x="0" y="0" width="91.02" height="27.63"></rect>
         </g>
     </svg>
-    {{Title|async}}
-</mat-toolbar>
+    <span class="app-title">{{Title|async}}</span>
+    <span class="toolbar-nav-=right">
+      <button mat-icon-button (click)="onWorkOrderClick()" matTooltip="Work Orders">
+          <i class="material-icons">workorder</i>
+      </button>
+      <button mat-icon-button (click)="onClientMonitorClick()" matTooltip="Client Monitor">
+          <i class="material-icons">business</i>
+      </button>
+      <button mat-icon-button matTooltip="QA">
+          <i class="material-icons">spellcheck</i>
+      </button>
+    </span>
+  </mat-toolbar-row>
+<!--   <mat-toolbar-row>
+    Second Row
+  </mat-toolbar-row>
+ --></mat-toolbar>
 <mat-sidenav-container class="work-sidenav-container">
     <mat-sidenav #snav [mode]="'over'">
         <mat-nav-list>
             <mat-toolbar color="primary">
                 <mat-toolbar-row>
-                    <button mat-icon-button (click)="onHome()">
+                    <button mat-icon-button (click)="onHome()" matTooltip="Home">
                         <i class="material-icons">home</i>
                     </button>
                 </mat-toolbar-row>
                 <mat-toolbar-row>
-                    <button mat-icon-button>
+                    <button mat-icon-button  (click)="onStyleGuide()" matTooltip="Style Guide">
+                        <i class="material-icons">style</i>
+                    </button>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                    <button mat-icon-button matTooltip="Account">
                         <i class="material-icons">account_box</i>
                     </button>
                 </mat-toolbar-row>
                 <mat-toolbar-row>
-                    <button mat-icon-button>
+                    <button mat-icon-button matTooltip="Settings">
                         <i class="material-icons">settings</i>
                     </button>
                 </mat-toolbar-row>
                 <mat-toolbar-row>
-                    <button mat-icon-button>
+                    <button mat-icon-button matTooltip="Input">
                         <i class="material-icons">input</i>
                     </button>
                 </mat-toolbar-row>
                 <mat-toolbar-row>
-                    <button mat-icon-button>
+                    <button mat-icon-button matTooltip="Sync">
                         <i class="material-icons">sync</i>
                     </button>
                 </mat-toolbar-row>

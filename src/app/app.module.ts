@@ -1,10 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import 'hammerjs';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { ToastrModule } from 'ngx-toastr';
 
 // import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing-module';
@@ -82,8 +85,23 @@ import { TaskByDateComponent } from './component/client-work/charts/task-by-date
 import { TaskByClientComponent } from './component/client-work/charts/task-by-client/task-by-client.component';
 import { EmployeeByWorkTypeComponent } from './component/field-work/charts/employee-by-work-type/employee-by-work-type.component';
 import { FieldWorkComponent } from './component/field-work/field-work/field-work.component';
-import { WorkorderComponent } from './component/workorder/workorder.component';
-import { WorkorderDetailComponent } from './component/workorder/workorder-detail/workorder-detail.component';
+import { WorkOrderComponent } from './component/work-order/work-order.component';
+import { WorkOrderDetailComponent } from './component/work-order/work-order-detail/work-order-detail.component';
+import { StyleguideComponent } from './component/styleguide/styleguide.component';
+import { WorkorderActivityComponent } from './component/workorder-activity/workorder-activity.component';
+import { BASE_PATH } from '@saille/northpower.planned.service';
+
+
+// // configuring providers
+// import { Configuration, ConfigurationParameters } from './typescript-angular/configuration';
+// import { ApiModule } from './typescript-angular/api.module';
+
+// // export function apiConfigFactory (): Configuration => {
+// //   const params: ConfigurationParameters = {
+// //     // set configuration parameters here.
+// //   }
+// //   return new Configuration(params);
+// // }
 
 @NgModule({
   declarations: [
@@ -118,14 +136,19 @@ import { WorkorderDetailComponent } from './component/workorder/workorder-detail
     TaskByClientComponent,
     EmployeeByWorkTypeComponent,
     FieldWorkComponent,
-    WorkorderComponent,
-    WorkorderDetailComponent,
+    WorkOrderComponent,
+    WorkOrderDetailComponent,
+    StyleguideComponent,
+    WorkorderActivityComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatTooltipModule,
     HttpClientModule,
     HttpModule,
+    FlexLayoutModule,
+    ToastrModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     // RouterModule,
@@ -161,6 +184,8 @@ import { WorkorderDetailComponent } from './component/workorder/workorder-detail
     MatProgressSpinnerModule,
     MatButtonToggleModule,
     MatButtonModule,
+    // // ApiModule.forRoot(apiConfigFactory),
+    // ApiModule,
   ],
   providers: [
     GoogleMapsAPIWrapper,
@@ -168,6 +193,7 @@ import { WorkorderDetailComponent } from './component/workorder/workorder-detail
     DamageCauseService,
     PieChartService,
     DateService,
+    {provide: BASE_PATH, useValue: "https://planned-dv1.northpowerb2b.com"}
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,73 @@
+<div gdAuto id="work-orders-container">
+  <h1 class="mat-headline">Workorders</h1>
+
+  <div fxLayout="row" fxLayout.lt-sm="column">
+    <div fxFlex>
+
+      <table mat-table matSort matSortDisableClear [dataSource]="workOrders" *ngIf="workOrders else workOrdersSpinner" (matSortChange)="sortData($event)">
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>id</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.id}} </td>
+        </ng-container>
+        <ng-container matColumnDef="clientId">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>clientId</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.clientId}} </td>
+        </ng-container>
+        <ng-container matColumnDef="workTypeId">
+          <th mat-header-cell *matHeaderCellDef>workTypeId</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.workTypeId}} </td>
+        </ng-container>
+        <ng-container matColumnDef="clientRequestId">
+          <th mat-header-cell *matHeaderCellDef>clientRequestId</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.clientRequestId}} </td>
+        </ng-container>
+        <ng-container matColumnDef="requested">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>requested</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.requested}} </td>
+        </ng-container>
+        <ng-container matColumnDef="received">
+          <th mat-header-cell *matHeaderCellDef>received</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.received}} </td>
+        </ng-container>
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef>status</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.status}} </td>
+        </ng-container>
+        <ng-container matColumnDef="statusChanged">
+          <th mat-header-cell *matHeaderCellDef>statusChanged</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.statusChanged}} </td>
+        </ng-container>
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef>description</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.description}} </td>
+        </ng-container>
+        <ng-container matColumnDef="scheduledStart">
+          <th mat-header-cell *matHeaderCellDef>scheduledStart</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.scheduledStart}} </td>
+        </ng-container>
+        <ng-container matColumnDef="scheduledEnd">
+          <th mat-header-cell *matHeaderCellDef>scheduledEnd</th>
+          <td mat-cell *matCellDef="let this_workOrder"> {{this_workOrder.scheduledEnd}} </td>
+        </ng-container>
+        <ng-container matColumnDef="activities">
+          <th mat-header-cell *matHeaderCellDef>activities</th>
+          <td mat-cell *matCellDef="let this_workOrder"> 
+            <a [routerLink]="['/workorder-activities', this_workOrder.id]" *ngIf="this_workOrder.activities.length > 0">{{this_workOrder.activities.length}}&nbsp;Activites</a>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsToDisplay" (click)="onClickRow(row)" [ngClass]="rowClass(row)"></tr>
+      </table>
+
+      <ng-template #workOrdersSpinner>
+        <mat-spinner [diameter]="50"></mat-spinner>
+      </ng-template>
+    </div>
+
+    <div fxFlex>
+      <app-work-order-detail *ngIf="selectedIndex != null" [index]="selectedIndex" [title]="selectedWorkOrder.Title" (descriptionChange)="onDescriptionChange($event)"></app-work-order-detail>
+    </div>
+  </div>
+</div>

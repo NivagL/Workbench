@@ -1,0 +1,34 @@
+<div gdAuto id="work-order-activities-container">
+  <h1 class="mat-headline">Workorder Activities</h1>
+
+  <div fxLayout="row">
+    <div fxFlex>
+      <table mat-table [dataSource]="workOrder?.activities" *ngIf="workOrder else workOrdersSpinner">
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef>id</th>
+          <td mat-cell *matCellDef="let thisWorkOrderActivity"> {{thisWorkOrderActivity.id}} </td>
+        </ng-container>
+        <ng-container matColumnDef="workOrderId">
+          <th mat-header-cell *matHeaderCellDef>workOrderId</th>
+          <td mat-cell *matCellDef="let thisWorkOrderActivity"> {{thisWorkOrderActivity.workOrderId}} </td>
+        </ng-container>
+        <ng-container matColumnDef="assetId">
+          <th mat-header-cell *matHeaderCellDef>assetId</th>
+          <td mat-cell *matCellDef="let thisWorkOrderActivity"> {{thisWorkOrderActivity.assetId}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsToDisplay" (click)="onClickRow(row)" [ngClass]=""></tr>
+      </table>
+    </div>
+
+    <ng-template #workOrdersSpinner>
+      <mat-spinner [diameter]="50"></mat-spinner>
+    </ng-template>
+
+    <div fxFlex>
+      <app-work-order-detail *ngIf="selectedIndex != null" [index]="selectedIndex" [title]="selectedWorkOrder.Title" (descriptionChange)="onDescriptionChange($event)"></app-work-order-detail>
+    </div>
+  </div>
+</div>

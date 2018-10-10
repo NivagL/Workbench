@@ -1,0 +1,10 @@
+
+<div class="work-order-detail">
+  <h2>Edit Selected Description</h2>
+  <mat-form-field>
+    <input matInput [(ngModel)]="description" placeholder="Edit description here">
+  </mat-form-field>
+
+  <button mat-stroked-button (click)="updateDescription()">Update Description</button>
+  <p>Selected Index: {{index}}</p>
+</div>

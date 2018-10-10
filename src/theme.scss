@@ -1,7 +1,42 @@
-@import '~@angular/material/theming';
-@include mat-core();
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic&amp;subset=latin-ext|Open+Sans:300,400,500,700,400italic&amp;subset=latin-ext');*/
 
-// @import 'app/component/workorder/workorder-detail/workorder-detail.component.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic&amp;subset=latin-ext');
+
+@import '~@angular/material/theming';
+
+$app-typography: mat-typography-config(
+  $font-family: '"Roboto", "Helvetica Neue", sans-serif',
+  $display-4:     mat-typography-level(112px, 112px, 300),
+  $display-3:     mat-typography-level(56px, 56px, 400),
+  $display-2:     mat-typography-level(45px, 48px, 400),
+  $display-1:     mat-typography-level(34px, 40px, 400),
+  $headline:      mat-typography-level(24px, 32px, 400),
+  $title:         mat-typography-level(20px, 32px, 500),
+  $subheading-2:  mat-typography-level(16px, 28px, 400),
+  $subheading-1:  mat-typography-level(15px, 24px, 400),
+  $body-2:        mat-typography-level(14px, 24px, 500),
+  $body-1:        mat-typography-level(14px, 20px, 400),
+  $caption:       mat-typography-level(12px, 20px, 400),
+  $button:        mat-typography-level(14px, 14px, 500),
+  $input:         mat-typography-level(16px, 1.25, 400)
+);
+
+
+/*$general-typography: mat-typography-config(
+  $body-2:        mat-typography-level(14px, 24px, 600)  
+);
+
+$secondary-typography: mat-typography-config(
+  $font-family: 'Roboto, sans-serif'
+);*/
+
+
+// Be sure that you only ever include this mixin once!
+@include mat-core($app-typography);
+
+/*@include mat-core();*/
+
+// @import 'app/component/work-order/work-order-detail/work-order-detail.component.scss';
 
 // See: http://mcg.mbitson.com
 // For use in src/lib/core/theming/_palette.scss
@@ -38,20 +73,183 @@ $northpower-orange: (
     )
 );
 
+$northpower-warn: (
+    50 : #e6f0f6,
+    100 : #c0d8e9,
+    200 : #96bfda,
+    300 : #6ba5cb,
+    400 : #4c91c0,
+    500 : #2c7eb5,
+    600 : #2776ae,
+    700 : #216ba5,
+    800 : #1b619d,
+    900 : #104e8d,
+    A100 : #bfdcff,
+    A200 : #8cc0ff,
+    A400 : #59a5ff,
+    A700 : #4097ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
 
-$my-app-primary: mat-palette($northpower-orange);
-$my-app-accent: mat-palette($mat-light-green);
-$my-app-warn: mat-palette($mat-yellow);
+$northpower-gray: (
+    50 : #ebebeb,
+    100 : #cccece,
+    200 : #abadae,
+    300 : #898c8d,
+    400 : #6f7374,
+    500 : #565a5c,
+    600 : #4f5254,
+    700 : #45484a,
+    800 : #3c3f41,
+    900 : #2b2e30,
+    A100 : #8ac0f6,
+    A200 : #5aa7f3,
+    A400 : #1b8dff,
+    A700 : #0280ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
 
-$workbench-light-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
-$workbench-dark-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
+$northpower-dark: (
+    50 : #e4e5e5,
+    100 : #bcbfbf,
+    200 : #909494,
+    300 : #646969,
+    400 : #424849,
+    500 : #212829,
+    600 : #1d2424,
+    700 : #181e1f,
+    800 : #141819,
+    900 : #0b0f0f,
+    A100 : #55ffff,
+    A200 : #22ffff,
+    A400 : #00eeee,
+    A700 : #00d4d4,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$northpower-primary: mat-palette($northpower-orange);
+$northpower-secondary: mat-palette($northpower-gray);
+$northpower-dark: mat-palette($northpower-dark);
+
+$northpower-accent: mat-palette($northpower-gray);
+$northpower-warn: mat-palette($northpower-warn);
+
+$northpower-light-theme: mat-light-theme($northpower-primary, $northpower-accent, $northpower-warn);
+$northpower-dark-theme: mat-dark-theme($northpower-primary, $northpower-accent, $northpower-warn);
 
 // @mixin custom-components-theme($theme) {
-//   @include workorder-detail-theme($theme);
+//   @include work-order-detail-theme($theme);
 // } 
 
-@include angular-material-theme($workbench-light-theme);
+@include angular-material-theme($northpower-light-theme);
 
-// @include custom-components-theme($workbench-light-theme);
+// @include custom-components-theme($northpower-light-theme);
 
 
+.color-primary {
+  color: mat-color($northpower-primary);
+}
+.color-accent {
+  color: mat-color($northpower-accent);
+}
+.color-warn {
+  color: mat-color($northpower-warn);
+}
+.color-danger {
+    color: mat-color($northpower-dark);
+}
+
+.background-primary {
+    color: white;
+    background-color: mat-color($northpower-primary);
+}
+.background-accent {
+    color: white;
+    background-color: mat-color($northpower-accent);
+}
+.background-warn {
+    color: white;
+    background-color: mat-color($northpower-warn);
+}
+.background-danger {
+    color: white;
+    background-color: mat-color($northpower-dark);
+}
+
+.northpower-warn {
+    color: mat-color($northpower-warn);
+}
+.northpower-danger {
+    color: mat-color($northpower-primary);
+}
+
+// .color-primary-reverse {
+//     color: white;
+//     background-color: mat-color($northpower-primary);
+// }
+// .color-accent-reverse {
+//     color: white;
+//     background-color: mat-color($northpower-accent);
+// }
+// .color-warn-reverse {
+//     color: white;
+//     background-color: mat-color($northpower-warn);
+// }
+
+// .on-background-primary {
+//     color: white;
+// }
+// .on-background-accent {
+//     color: white;
+// }
+// .on-background-warn {
+//     color: white;
+// }
+
+h1, h2, h3, h4, h5, h6 {
+  color: mat-color($northpower-primary);
+}

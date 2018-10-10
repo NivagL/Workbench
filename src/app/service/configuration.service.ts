@@ -6,7 +6,7 @@ export class ConfigurationService {
   private dataUrl_default: string = 'https://localhost:';
   private dataFilePath_default: string = './assets/data/';
   private useDataFiles_default: boolean = false;
-  private appName_default = 'Northpower Contracting Workbench'
+  private appName_default = 'Contracting Workbench'
 
   constructor() {
     this.checkDefault('dataFilePath', this.dataFilePath_default);

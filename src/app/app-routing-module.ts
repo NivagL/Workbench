@@ -7,17 +7,19 @@ import { ClientWorkComponent } from './component/client-work/client-work/client-
 import { RmWorkQaComponent } from './component/client-work/rm-work-qa/rm-work-qa.component';
 import { RmWorkQaDetailComponent } from './component/client-work/rm-work-qa-detail/rm-work-qa-detail.component';
 import { PageNotFoundComponent } from './component/not-found.component';
-import { WorkorderComponent } from './component/workorder/workorder.component';
+import { WorkOrderComponent } from './component/work-order/work-order.component';
+import { StyleguideComponent } from './component/styleguide/styleguide.component';
+import { WorkorderActivityComponent } from './component/workorder-activity/workorder-activity.component';
 
 const routes: Routes = [
     {
         path: '',
         component: WorkbenchComponent
     },
-    {
-        path: 'wb',
-        component: WorkbenchComponent
-    },
+    // {
+    //     path: 'wb',
+    //     component: WorkbenchComponent
+    // },
     {
         path: 'cw',
         component: ClientWorkComponent
@@ -31,8 +33,16 @@ const routes: Routes = [
         component: RmWorkQaDetailComponent
     },
     {
-        path: 'workorder',
-        component: WorkorderComponent
+        path: 'workorders',
+        component: WorkOrderComponent
+    },
+    {
+        path: 'workorder-activities/:workOrderId',
+        component: WorkorderActivityComponent
+    },
+    {
+        path: 'styleguide',
+        component: StyleguideComponent
     },
     { 
         path: '**',

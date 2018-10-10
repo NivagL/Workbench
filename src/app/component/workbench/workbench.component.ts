@@ -30,7 +30,7 @@ export class WorkbenchComponent implements OnInit {
     if(tile.Title == "Client Work") {
       this.router.navigate(['/cw']);
     }
-    if(tile.Title == "Filed Work") {
+    if(tile.Title == "Field Work") {
       this.router.navigate(['/fw']);
     }
   }
