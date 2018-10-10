@@ -54,8 +54,8 @@ export class WorkOrderComponent implements OnInit {
 
   private getSortFunction(event) {
     let col = event.active;
-    let gt = function(v1, v2) { return v1[col] > v2[col] };
-    let lt = function(v1, v2) { return v1[col] < v2[col] };
+    let gt = function(v1, v2) { return v1[col] > v2[col] ? 1 : -1 };
+    let lt = function(v1, v2) { return v1[col] < v2[col] ? 1 : -1 };
     return (event.direction == 'asc') ? gt : lt;
   }
 
