@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { WorkOrderService, WorkOrder } from '@saille/northpower.planned.service';
 import { WorkOrderDetailComponent } from './work-order-detail/work-order-detail.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
+import {MatSort} from '@angular/material';
 
  
 @Component({
@@ -14,14 +14,11 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 })
 export class WorkOrderComponent implements OnInit {
 
-  public workOrders: Array<WorkOrder>;
+  public workOrders: Array<WorkOrder> = null;
   public columnsToDisplay = ['id', 'clientId', 'workTypeId', 'clientRequestId', 'requested', 'received', 'status', 'statusChanged', 'description', 'scheduledStart', 'scheduledEnd', 'activities'];
-  // public columnsToDisplay = ['id'];
-  public workOrdersLoaded = false;
 
   private selectedIndex: string; // Guid
   private selectedWorkOrder: WorkOrder;
-
 
   constructor(
     private workOrderService: WorkOrderService,
@@ -36,34 +33,39 @@ export class WorkOrderComponent implements OnInit {
   }
   
   ngOnInit() {
-
-
-    // this.workOrderService.getJSONWorkOrders().subscribe( // Local service definition
-    //   (array_of_workOrders) => {
-    //     this.workOrders = array_of_workOrders;
-    //     this.workOrdersLoaded = true;
-    //   }
-    // );
-
+    console.log('WorkOrderComponent.ngOnInit() started');
     this.workOrderService.workOrderGetAll().subscribe(
       (array_of_workOrders) => {
         this.workOrders = array_of_workOrders;
-        this.workOrdersLoaded = true;
-        console.log('WorkOrderComponent.ngOnInit() loaded workorders into this.workOrders', this.workOrders);
+        console.log('WorkOrderComponent.ngOnInit() subscribe: loaded workorders into this.workOrders', this.workOrders);
       }
     );
+  }
 
+  sortData(event) {
+    console.log('sortData started');
+    console.log('sortData event', event);
+
+    let sortFunction = this.getSortFunction(event);
+    let tempWorkOrders = this.workOrders.slice(0);
+    this.workOrders = tempWorkOrders.sort(sortFunction);
+    console.log('sortData this.workOrders', this.workOrders);
+  }
+
+  private getSortFunction(event) {
+    let col = event.active;
+    let gt = function(v1, v2) { return v1[col] > v2[col] };
+    let lt = function(v1, v2) { return v1[col] < v2[col] };
+    return (event.direction == 'asc') ? gt : lt;
   }
 
   onDescriptionChange(newDescription) {
     console.log('on .. description ... change', newDescription);
-    // this.selectedWorkOrder.Description = newDescription;
     this.selectedWorkOrder.description = newDescription;
   }
 
   rowClass(row) {
     let rowClasses = [];
-    // console.log('rowClass()', row);
     if (row.id == this.selectedIndex) {
       rowClasses.push('selected');
     }

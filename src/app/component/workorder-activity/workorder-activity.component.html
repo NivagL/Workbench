@@ -3,9 +3,7 @@
 
   <div fxLayout="row">
     <div fxFlex>
-      <mat-spinner [diameter]="50" *ngIf="!workOrderActivitiesLoaded"></mat-spinner>
-
-      <table mat-table [dataSource]="workOrder.activities" *ngIf="workOrderActivitiesLoaded">
+      <table mat-table [dataSource]="workOrder?.activities" *ngIf="workOrder else workOrdersSpinner">
 
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef>id</th>
@@ -24,6 +22,10 @@
         <tr mat-row *matRowDef="let row; columns: columnsToDisplay" (click)="onClickRow(row)" [ngClass]=""></tr>
       </table>
     </div>
+
+    <ng-template #workOrdersSpinner>
+      <mat-spinner [diameter]="50"></mat-spinner>
+    </ng-template>
 
     <div fxFlex>
       <app-work-order-detail *ngIf="selectedIndex != null" [index]="selectedIndex" [title]="selectedWorkOrder.Title" (descriptionChange)="onDescriptionChange($event)"></app-work-order-detail>

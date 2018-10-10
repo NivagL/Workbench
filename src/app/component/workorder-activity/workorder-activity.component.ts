@@ -36,19 +36,6 @@ export class WorkorderActivityComponent implements OnInit {
     console.log('WorkorderActivityComponent.ngOnInit this.workOrderId', this.workOrderId);
 
 
-    // this.workOrderService.getMappedJSONWorkOrderById(this.workOrderId).subscribe( // Local service
-    //   (workOrder) => {
-    //     this.workOrder = workOrder;
-    //     console.log('WorkorderActivityComponent.ngOnInit subscribe data this.workOrder', this.workOrder);
-    //     this.workOrderActivitiesLoaded = true;
-    //   },
-    //   (error) => {
-    //     this.toastr.error(error.toString(), 'Activites Load Error');
-    //     console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe error', error);
-    //   },
-    //   () =>{ console.log('WorkorderActivityComponent.ngOnInit getMappedJSONWorkOrderById subscribe complete');} 
-    // );
-
     this.workOrderService.workOrderGet(this.workOrderId).subscribe(
       (workOrder) => {
         this.workOrder = workOrder;
@@ -56,10 +43,15 @@ export class WorkorderActivityComponent implements OnInit {
         this.workOrderActivitiesLoaded = true;
       },
       (error) => {
-        this.toastr.error(error.toString(), 'Activites Load Error');
+        this.toastr.error(error.toString(), 'Activities Load Error');
         console.log('WorkorderActivityComponent.ngOnInit workOrderGet subscribe error', error);
       },
-      () =>{ console.log('WorkorderActivityComponent.ngOnInit workOrderGet subscribe complete');} 
+      () =>{
+        if (!this.workOrder) {
+          this.toastr.error('WorkOrder was empty.', 'Activities Load Problem');
+        }
+        console.log('WorkorderActivitComponent.ngOnInit workOrderGet subscribe complete', this.workOrder);
+      } 
     );
 
 
