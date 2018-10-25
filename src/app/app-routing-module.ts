@@ -9,7 +9,8 @@ import { RmWorkQaDetailComponent } from './component/client-work/rm-work-qa-deta
 import { PageNotFoundComponent } from './component/not-found.component';
 import { WorkOrderComponent } from './component/work-order/work-order.component';
 import { StyleguideComponent } from './component/styleguide/styleguide.component';
-import { WorkorderActivityComponent } from './component/workorder-activity/workorder-activity.component';
+import { WorkOrderDetailComponent } from './component/work-order/workorder-detail/workorder-detail.component';
+import { WorkOrderActivityComponent } from './component/workorder-activity/workorder-activity.component';
 
 const routes: Routes = [
     {
@@ -33,12 +34,20 @@ const routes: Routes = [
         component: RmWorkQaDetailComponent
     },
     {
-        path: 'workorders',
+        path: 'workorder',
         component: WorkOrderComponent
     },
     {
+        path: 'foobarorder',
+        component: WorkOrderComponent
+    },
+    {
+        path: 'workorder/detail/:workOrderId',
+        component: WorkOrderDetailComponent
+    },
+    {
         path: 'workorder-activities/:workOrderId',
-        component: WorkorderActivityComponent
+        component: WorkOrderActivityComponent
     },
     {
         path: 'styleguide',

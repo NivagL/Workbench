@@ -4,9 +4,9 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { WorkOrderService, WorkOrder } from '@saille/northpower.planned.service';
 
 @Component({
-  selector: 'app-work-order-detail',
-  templateUrl: './work-order-detail.component.html',
-  styleUrls: ['./work-order-detail.component.scss']
+  selector: 'app-workorder-detail',
+  templateUrl: './workorder-detail.component.html',
+  styleUrls: ['./workorder-detail.component.scss']
 })
 export class WorkOrderDetailComponent implements OnInit {
 

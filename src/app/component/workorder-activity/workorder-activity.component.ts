@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './workorder-activity.component.html',
   styleUrls: ['./workorder-activity.component.css']
 })
-export class WorkorderActivityComponent implements OnInit {
+export class WorkOrderActivityComponent implements OnInit {
 
   private workOrderId: string; // Guid
   private workOrder: WorkOrder;
@@ -32,19 +32,19 @@ export class WorkorderActivityComponent implements OnInit {
 
   ngOnInit() {
     this.workOrderId = this.route.snapshot.paramMap.get('workOrderId');
-    console.log('WorkorderActivityComponent.ngOnInit starting');
-    console.log('WorkorderActivityComponent.ngOnInit this.workOrderId', this.workOrderId);
+    console.log('WorkOrderActivityComponent.ngOnInit starting');
+    console.log('WorkOrderActivityComponent.ngOnInit this.workOrderId', this.workOrderId);
 
 
     this.workOrderService.workOrderGet(this.workOrderId).subscribe(
       (workOrder) => {
         this.workOrder = workOrder;
-        console.log('WorkorderActivityComponent.ngOnInit subscribe data this.workOrder', this.workOrder);
+        console.log('WorkOrderActivityComponent.ngOnInit subscribe data this.workOrder', this.workOrder);
         this.workOrderActivitiesLoaded = true;
       },
       (error) => {
         this.toastr.error(error.toString(), 'Activities Load Error');
-        console.log('WorkorderActivityComponent.ngOnInit workOrderGet subscribe error', error);
+        console.log('WorkOrderActivityComponent.ngOnInit workOrderGet subscribe error', error);
       },
       () =>{
         if (!this.workOrder) {
@@ -58,7 +58,7 @@ export class WorkorderActivityComponent implements OnInit {
   }
 
   onClickRow(row) {
-    console.log('WorkorderActivityComponent onClickRow', row);
+    console.log('WorkOrderActivityComponent onClickRow', row);
   }
 
 

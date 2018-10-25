@@ -28,7 +28,7 @@
     </ng-template>
 
     <div fxFlex>
-      <app-work-order-detail *ngIf="selectedIndex != null" [index]="selectedIndex" [title]="selectedWorkOrder.Title" (descriptionChange)="onDescriptionChange($event)"></app-work-order-detail>
+      <app-workorder-detail *ngIf="selectedIndex != null" [index]="selectedIndex" [title]="selectedWorkOrder.Title" (descriptionChange)="onDescriptionChange($event)"></app-workorder-detail>
     </div>
   </div>
 </div>

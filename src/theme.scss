@@ -36,8 +36,6 @@ $secondary-typography: mat-typography-config(
 
 /*@include mat-core();*/
 
-// @import 'app/component/work-order/work-order-detail/work-order-detail.component.scss';
-
 // See: http://mcg.mbitson.com
 // For use in src/lib/core/theming/_palette.scss
 $northpower-orange: (
@@ -181,14 +179,7 @@ $northpower-warn: mat-palette($northpower-warn);
 $northpower-light-theme: mat-light-theme($northpower-primary, $northpower-accent, $northpower-warn);
 $northpower-dark-theme: mat-dark-theme($northpower-primary, $northpower-accent, $northpower-warn);
 
-// @mixin custom-components-theme($theme) {
-//   @include work-order-detail-theme($theme);
-// } 
-
 @include angular-material-theme($northpower-light-theme);
-
-// @include custom-components-theme($northpower-light-theme);
-
 
 .color-primary {
   color: mat-color($northpower-primary);

@@ -86,9 +86,9 @@ import { TaskByClientComponent } from './component/client-work/charts/task-by-cl
 import { EmployeeByWorkTypeComponent } from './component/field-work/charts/employee-by-work-type/employee-by-work-type.component';
 import { FieldWorkComponent } from './component/field-work/field-work/field-work.component';
 import { WorkOrderComponent } from './component/work-order/work-order.component';
-import { WorkOrderDetailComponent } from './component/work-order/work-order-detail/work-order-detail.component';
+import { WorkOrderDetailComponent } from './component/work-order/workorder-detail/workorder-detail.component';
 import { StyleguideComponent } from './component/styleguide/styleguide.component';
-import { WorkorderActivityComponent } from './component/workorder-activity/workorder-activity.component';
+import { WorkOrderActivityComponent } from './component/workorder-activity/workorder-activity.component';
 import { BASE_PATH } from '@saille/northpower.planned.service';
 
 
@@ -139,7 +139,7 @@ import { BASE_PATH } from '@saille/northpower.planned.service';
     WorkOrderComponent,
     WorkOrderDetailComponent,
     StyleguideComponent,
-    WorkorderActivityComponent,
+    WorkOrderActivityComponent,
   ],
   imports: [
     BrowserModule,

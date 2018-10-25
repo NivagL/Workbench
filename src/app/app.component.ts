@@ -26,7 +26,7 @@ export class AppComponent {
   }
 
   onWorkOrderClick() {
-    this.router.navigate(['/workorders']);
+    this.router.navigate(['/workorder']);
   } 
 
   onClientMonitorClick() {

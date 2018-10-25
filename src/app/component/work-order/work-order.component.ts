@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 // import { WorkOrder } from '../../model/work-order';
 // import { WorkOrderService } from '../../service/work-order.service';
 import { WorkOrderService, WorkOrder } from '@saille/northpower.planned.service';
-import { WorkOrderDetailComponent } from './work-order-detail/work-order-detail.component';
+import { WorkOrderDetailComponent } from './workorder-detail/workorder-detail.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSort} from '@angular/material';
 
@@ -22,14 +23,17 @@ export class WorkOrderComponent implements OnInit {
 
   constructor(
     private workOrderService: WorkOrderService,
-  ) {
+     private router: Router,
+ ) {
     
   }
 
   onClickRow(row) {
     console.log('WorkOrderComponent onClickRow', row);
-    this.selectedIndex = row.id; // Guid
-    this.selectedWorkOrder = this.workOrders.find(workorder => workorder.id == row.id);
+    this.router.navigate(['/workorder/detail', row.id]);
+
+    // this.selectedIndex = row.id; // Guid
+    // this.selectedWorkOrder = this.workOrders.find(workorder => workorder.id == row.id);
   }
   
   ngOnInit() {
